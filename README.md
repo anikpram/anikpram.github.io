@@ -1,6 +1,3 @@
----
-title: My custom title
----
 # Aniket Pramanik
 
 PhD Candidate at the <a href="https://cbig.iibi.uiowa.edu/">Computational Biomedical Imaging Lab, The University of Iowa.</a>
