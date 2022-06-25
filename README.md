@@ -1,3 +1,16 @@
+# Aniket Pramanik
+
+PhD Candidate at the <a href="https://cbig.iibi.uiowa.edu/">Computational Biomedical Imaging Lab, The University of Iowa.</a>
+
+<img src="citations.jpeg"  width="150" height="200">
+
+## Research
+I work on Computational Imaging Techniques.
+
+## Education
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/anikpram/anikpram.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
