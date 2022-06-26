@@ -1,0 +1,63 @@
+/* Place your CSS styles in this file */
+
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+
+div {
+    white-space: normal;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+
+
+
+a{
+  color: #800000;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  padding-left: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+hr{
+  height: 1px;
+  background-color: #ebedef;
+  border: none;
+  }
+ 
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} 
+
+
+.topnav a:hover {
+  background-color: white;
+  color: #800000;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: #800000;
+  font-weight: bold;
+}
