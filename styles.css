@@ -68,6 +68,7 @@ h1 {
 .advisor{
   text-decoration: underline dashed maroon 1px;
   color: maroon;
+  text-underline-offset: 2px;
   display: inline;
 }
 
@@ -76,8 +77,9 @@ h1 {
 }
 
 .me{
-  text-decoration: underline black;
+  text-decoration: underline black 1px;
   display: inline;
+  text-underline-offset: 2px;
 }
 
 
