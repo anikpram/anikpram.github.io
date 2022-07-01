@@ -41,6 +41,47 @@ h1 {
 }
 
 
+.pub_button{
+  background-color: white; 
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.pub_button:hover{
+  border: 1px solid maroon;
+  color: maroon;
+}
+
+
+.advisor{
+  text-decoration: underline dashed maroon 1px;
+  color: maroon;
+  display: inline;
+}
+
+.advisor:hover{
+  text-decoration: underline maroon 1px;
+}
+
+.me{
+  text-decoration: underline black;
+  display: inline;
+}
+
+
+
 .journal_box{
   float: left;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
