@@ -17,7 +17,11 @@
 </div>-->
 
 
+
+
+
 <div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
 <div class="navdrop">
     <div class="nav">
     <div></div>
@@ -32,6 +36,18 @@
     </div>
 </div>
 </div> 
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+         element.className = "dark-mode";
+         element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+    }
+else{
+  element.className = "";
+  element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
 
 
 
@@ -79,7 +95,6 @@ accelerated Magnetic Resonance Imaging (MRI) acquisition and recovery.
 </div>
 </div>
 </div>
-
 
 
 
