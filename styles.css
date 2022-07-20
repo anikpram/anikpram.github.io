@@ -1,5 +1,44 @@
 /* Place your CSS styles in this file */
 
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: rgb(1, 1, 40);
+  color: white;
+}
+
+.dark-mode .fa{
+  color: white;
+}
+
+.dark-mode .ai{
+  color: white;
+}
+
+
+
+.mode_button{
+  float: right;
+  background-color: black;
+  padding-top: 0.5em;
+  padding-right: 0;
+  margin-right: 25%;
+  border: none;
+  cursor: pointer;
+}
+
+.mode_button .fa{
+  color: goldenrod;
+  font-size: 24px;
+  padding: 0;
+  background-color: black;
+}
+
+
 h1 {
     font-family: "News Cycle", sans-serif;
     font-weight: 100;
@@ -15,9 +54,9 @@ h2 {
 
 
 .intro {
-    max-width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     background-color: none;
 }
 
@@ -36,7 +75,7 @@ h2 {
   font-size: 20px;
   text-decoration: none;
   padding-top: 8px;
-  color: gold;
+  color: goldenrod;
   margin-left: 30%;
   float: left;
   overflow: hidden;
@@ -53,8 +92,9 @@ h2 {
 .navdrop {
   height: 40px;
   float: right;
-  margin-right: 30%; 
+  margin-right: 2%; 
   overflow: hidden;
+  cursor: pointer;
 }
 
 
@@ -66,7 +106,7 @@ h2 {
 
 .nav div{
   height: 4px;
-  background-color: gold;
+  background-color: goldenrod;
   margin: 5px 0;
   border-radius: 25px;
 }
@@ -83,7 +123,7 @@ h2 {
 
 .navdrop-content a {
   float: none;
-  color: gold;
+  color: goldenrod;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -93,7 +133,7 @@ h2 {
 
 .navdrop-content a:hover {
   background-color: black;
-  color: gold;
+  color: goldenrod;
   text-decoration: none;
   font-weight: bold;
 }
@@ -101,7 +141,7 @@ h2 {
 
 .navdrop:hover .navdrop-content {
   background-color: black;
-  color: gold;
+  color: goldenrod;
   display: block;
 }
 
@@ -160,7 +200,7 @@ h2 {
 }
 
 .fa:hover {
-    color: gold;
+    color: goldenrod;
     text-decoration: none;
 }
 
@@ -175,7 +215,7 @@ h2 {
 }
 
 .ai:hover {
-    color: gold;
+    color: goldenrod;
     text-decoration: none;
 }
 
@@ -263,8 +303,8 @@ h2 {
 }
 
 .pub_button:hover{
-  border: 1px solid gold;
-  color: gold;
+  border: 1px solid goldenrod;
+  color: goldenrod;
 }
 
 
@@ -287,8 +327,8 @@ h2 {
 
 
 .dropbtn:hover{
-  border: 1px solid gold;
-  color: gold;
+  border: 1px solid goldenrod;
+  color: goldenrod;
 }
 
 
@@ -316,14 +356,14 @@ h2 {
 
 
 .advisor{
-  text-decoration: underline dashed gold 1px;
-  color: gold;
+  text-decoration: underline dashed goldenrod 1px;
+  color: goldenrod;
   text-underline-offset: 2px;
   display: inline;
 }
 
 .advisor:hover{
-  text-decoration: underline gold 1px;
+  text-decoration: underline goldenrod 1px;
 }
 
 .me{
@@ -341,7 +381,7 @@ h2 {
   text-align: center;
   font-size: 13px;
   color: black;
-  background-color: gold;
+  background-color: goldenrod;
   width: auto;
   border: 0;
   margin: 0;
@@ -359,7 +399,7 @@ h2 {
 
 
 a{
-  color: gold;
+  color: goldenrod;
   text-decoration:none;
 }
 
@@ -407,7 +447,7 @@ body {
  
 .topnav a {
   float: left;
-  color: gold;
+  color: goldenrod;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -417,11 +457,11 @@ body {
 
 .topnav a:hover {
   background-color: black;
-  color: gold;
+  color: goldenrod;
 }
 
 .topnav a.active {
   background-color: black;
-  color: gold;
+  color: goldenrod;
   font-weight: bold;
 }
