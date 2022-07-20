@@ -25,3 +25,23 @@ window.onclick = function(event) {
 
 
 
+function myDark(x) {
+   var element = document.body;
+   if(element.className == ""){
+     element.className = "dark-mode";
+     x.className = "fa fa-sun-o";
+     localStorage.setItem("mode", "dark"); 
+     localStorage.setItem("icon", JSON.stringify(x));
+   } 
+   else{
+     element.className = "";
+     x.className = "fa fa-moon-o";
+     localStorage.setItem("mode", "light");
+     localStorage.setItem("icon", JSON.stringify(x));
+   }
+}
+
+
+
+
+
