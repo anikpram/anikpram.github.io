@@ -16,7 +16,10 @@
 </div>-->
 
 
+
+
 <div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
 <div class="navbar_txt"><a href="index.html">Aniket Pramanik</a></div>
 <div class="navdrop">
     <div class="nav">
@@ -33,6 +36,18 @@
 </div>
 </div> 
 
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+         element.className = "dark-mode";
+         element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+    }
+else{
+  element.className = "";
+  element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
 
 <div class="intro">
 
@@ -45,7 +60,7 @@
   <li><i class='fa fa-graduation-cap' style='float:left; font-size:24px'></i>
   <div class="edu_details">Aug. 2017 - Present: University of Iowa, Iowa City, Iowa 
   <ul class="entry">
-  <li>PhD Candidate in Computer Engineering. Advised by <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob.</a></li>
+  <li>PhD Candidate in Computer Engineering. Advised by <a href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob.</a></li>
   <li>GPA: 3.92/4.0</li>
   </ul>  
   </div>
@@ -64,9 +79,16 @@
 <h2 style="line-height: 20px">Work Experience</h1>
 <ul class="resume">
   <li><i class='fa fa-briefcase' style='float:left; font-size:24px'></i>
-  <div class="edu_details">May 2021 - Aug. 2021: Research Intern, Data Science Imaging Group, Genentech Inc., South San Francisco, California  
+  <div class="edu_details">May 2021 - Aug. 2021: Research Intern, Data Science Imaging Group, <a href="https://www.gene.com/">Genentech Inc.</a>, South San Francisco, California  
   <ul class="entry">
   <li>Host: Anithapriya Krishnan</li>
+  </ul>  
+  </div>
+  </li>
+  <li><i class='fa fa-briefcase' style='float:left; font-size:24px'></i>
+  <div class="edu_details">Jan. 2018 - Present: Graduate Research Assistant, <a href="https://cbig.iibi.uiowa.edu/">CBIG Lab</a>, University of Iowa, Iowa City, Iowa  
+  <ul class="entry">
+  <li>Host: Mathews Jacob</li>
   </ul>  
   </div>
   </li>
@@ -77,9 +99,30 @@
 <h2 style="line-height: 20px">Awards and Fellowships</h1>
 <ul class="resume">
   <li><i class='fa fa-trophy' style='float:left; font-size:24px'></i>
-  <div class="edu_details">May 2021 - Aug. 2021: Research Intern, Data Science Imaging Group, Genentech Inc., South San Francisco, California  
+  <div class="edu_details">Aug. 2021 - Dec. 2021: Post-Comprehensive Research Fellowship  
   <ul class="entry">
-  <li>Mentor: Anithapriya Krishnan</li>
+  <li>Sponsor: <a href="https://uiowa.edu/">University of Iowa, USA</a></li>
+  </ul>  
+  </div>
+  </li>
+  <li><i class='fa fa-trophy' style='float:left; font-size:24px'></i>
+  <div class="edu_details">May 2021: <a href="https://www.ismrm.org/21/21-Summa.pdf">Summa Cum Laude Merit Award</a> ISMRM 2021  
+  <ul class="entry">
+  <li>Sponsor: <a href="https://www.ismrm.org/">International Society for Magnetic Resonance in Medicine (ISMRM)</a></li>
+  </ul>  
+  </div>
+  </li>
+  <li><i class='fa fa-trophy' style='float:left; font-size:24px'></i>
+  <div class="edu_details">Apr. 2019: <a href="https://biomedicalimaging.org/2019/isbi-2019-awards/">Best Machine Learning Paper Award</a> IEEE ISBI 2019, Venice, Italy  
+  <ul class="entry">
+  <li>Sponsor: <a href="https://twitter.com/NVIDIAEU/status/1116307317891399681">Nvidia</a></li>
+  </ul>  
+  </div>
+  </li>
+  <li><i class='fa fa-trophy' style='float:left; font-size:24px'></i>
+  <div class="edu_details">Apr. 2019: Travel Grant Award for IEEE ISBI 2019, Venice, Italy  
+  <ul class="entry">
+  <li>Sponsor: <a href="https://www.nih.gov/">National Institute of Health, USA</a></li>
   </ul>  
   </div>
   </li>
@@ -90,10 +133,15 @@
 <h2 style="line-height: 20px">Teaching</h1>
 <ul class="resume">
   <li><i class='fa fa-book' style='float:left; font-size:24px'></i>
-  <div class="edu_details">May 2021 - Aug. 2021: Research Intern, Data Science Imaging Group, Genentech Inc., South San Francisco, California  
-  <ul class="entry">
-  <li>Mentor: Anithapriya Krishnan</li>
-  </ul>  
+  <div class="edu_details">Fall 2017: <b style="font-weight:400">TA</b>, Introduction to Digital Design (ECE 3320), University of Iowa  
+  </div>
+  </li>
+  <li><i class='fa fa-book' style='float:left; font-size:24px'></i>
+  <div class="edu_details">Fall 2017: <b style="font-weight:400">TA</b>, Principles of Electrical Engineering Design (ECE 4880), University of Iowa  
+  </div>
+  </li>
+  <li><i class='fa fa-book' style='float:left; font-size:24px'></i>
+  <div class="edu_details">Spring 2018: <b style="font-weight:400">TA</b>, Linear Systems-I (ECE 2400), University of Iowa  
   </div>
   </li>
 </ul>
@@ -103,10 +151,20 @@
 <h2 style="line-height: 20px">Professional Services</h1>
 <ul class="resume">
   <li><i class='fa fa-edit' style='float:left; font-size:24px'></i>
-  <div class="edu_details">May 2021 - Aug. 2021: Research Intern, Data Science Imaging Group, Genentech Inc., South San Francisco, California  
+  <div class="edu_details"><b style="font-weight:400">Journal Reviewer</b>  
   <ul class="entry">
-  <li>Mentor: Anithapriya Krishnan</li>
-  </ul>  
+  <li>IEEE Transactions in Medical Imaging</li>
+  </ul> 
+  <ul class="entry">
+  <li>IEEE Transactions in Computational Imaging</li>
+  </ul> 
+  </div>
+  </li>
+  <li><i class='fa fa-edit' style='float:left; font-size:24px'></i>
+  <div class="edu_details"><b style="font-weight:400">Conference Reviewer</b>  
+  <ul class="entry">
+  <li>IEEE International Symposium in Biomedical Imaging (2020-2022)</li>
+  </ul> 
   </div>
   </li>
 </ul>
