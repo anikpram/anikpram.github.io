@@ -32,6 +32,10 @@ body {
   border-color: white; 
 }
 
+.dark-mode .me{
+  text-decoration: underline white 1px;
+}
+
 
 
 
