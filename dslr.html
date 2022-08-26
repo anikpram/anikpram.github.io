@@ -1,0 +1,312 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!--<div class="topnav">
+  <a class="active" href="index.html">About</a>
+  <a href="#news">Experience</a>
+  <a href="publications.html">Publications</a>
+  <a href="#about">Blog</a>
+</div>-->
+
+
+
+
+
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="index.html">Aniket Pramanik</a></div>
+<div class="navdrop">
+    <div class="nav">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    <div class="navdrop-content">
+      <a href="index.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a style="font-weight: bold;" href="blog.html">Blog</a>
+    </div>
+</div>
+</div> 
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+         element.className = "dark-mode";
+         element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+    }
+else{
+  element.className = "";
+  element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
+
+
+<div class="intro">
+<h1 style="margin-top: 25%; margin-bottom: 3%; font-size: 300%; font-weight:400">Deep Generalization of Structured Low-Rank Algorithms (Deep-SLR)</h1>
+<div style="margin-bottom: 7%; font-weight: 100; font-size: 120%">In this blog post, we talk about structured low-rank matrix completion algorithms.
+\(a = b + c\) is an equation 
+<span class="citation">[1,2]
+<div class="citation_detail">
+<table class="cite_name">
+<tr>
+  <td>Stable and Memory-Efficient Image Recovery Using Monotone Operator Learning 
+  <br>
+  Aniket Pramanik and Mathews Jacob 
+  <br>
+  <i>arXiv</i>
+  </td>
+</tr>
+<tr>
+  <td>Stable and Memory-Efficient Image Recovery Using Monotone Operator Learning 
+  <br>
+  Aniket Pramanik and Mathews Jacob 
+  <br>
+  <i>arXiv</i>
+  </td>
+</tr>
+</table>
+</div>
+</span>
+</div>
+</div>
+<hr>
+
+<div class="intro">
+<div style="width:30%; display:inline-block; margin-top:2%; margin-bottom:2%">
+<span style="font-size:50%">
+AUTHORS
+</span>
+<br>
+<span style="font-size:80%; font-weight:500">
+Aniket Pramanik
+</span>
+</div>
+<div style="width:30%; display:inline-block">
+<span style="font-size:50%">
+AFFILIATIONS
+</span>
+<br>
+<span style="font-size:80%; font-weight:100">
+University of Iowa
+</span>
+</div>
+<div style="width:30%; display:inline-block">
+<span style="font-size:50%">
+PUBLISHED
+</span>
+<br>
+<span style="font-size:80%; font-weight:100">
+August 12, 2022
+</span>
+</div>
+</div>
+
+<hr>
+
+<div style="width:24%; float: left">
+<div class="contents">
+<div style="padding-left: 30%; font-size: 120%; font-weight:400; overflow-wrap: break-word;">Contents</div>
+
+<div style="padding-top: 10%; padding-left: 30%; font-size: 100%; font-weight:400; overflow-wrap: break-word;">  
+<div style="padding-bottom: 5%">
+<a href="#int" class="blog_a">Introduction</a>
+<br>
+</div>
+<div style="padding-bottom: 5%">
+<a href="#work" class="blog_a">Work</a>
+<br>
+</div>
+<div style="padding-bottom: 5%">
+<a href="#exp" class="blog_a">Experience</a>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<div style="width: 50%; float: right; margin-right:25%">
+<div id="int" style="padding-top: 10%; font-size: 250%; font-weight:400; padding-bottom: 2%">Introduction</div>
+<hr>
+<span style="font-weight: 100">Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space. 
+</span>
+
+<div id="work" style="padding-top: 10%; font-size: 250%; font-weight:400; padding-bottom: 2%">Work</div>
+<hr style="color: lightgrey">
+<span style="font-weight: 100">
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+</span>
+
+<div id="exp" style="padding-top: 10%; font-size: 250%; font-weight:400; padding-bottom: 2%">Experience</div>
+<hr style="color: lightgrey">
+<span style="font-weight: 100">
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+Magnetic Resonance Imaging (MRI) provides an excellent
+soft tissue contrast at the expense of long acquisition times.
+MRI scan times are directly proportional to image resolu-
+tion, thus, warranting accelerated acquisition schemes. Paral-
+lel MRI (PMRI) was introduced for faster acquisition. It uses
+an array of coils, spatially sensitive to different regions of
+the organ of interest1, enabling undersampled acquisitions.
+PMRI reconstruction approaches can be classified into pre-
+calibrated, auto-calibrated and calibration-less, depending
+on the estimation of coil sensitivities. While, pre-calibrated
+SENSE2 obtains sensitivity information from additional cal-
+ibration scans, auto-calibrated GRAPPA3 estimates it from
+a fully sampled region in center of k-space.
+</span>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
