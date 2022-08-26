@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!--<div class="topnav">
+  <a class="active" href="index.html">About</a>
+  <a href="#news">Experience</a>
+  <a href="publications.html">Publications</a>
+  <a href="#about">Blog</a>
+</div>-->
+
+
+
+
+
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="index.html">Aniket Pramanik</a></div>
+<div class="navdrop">
+    <div class="nav">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    <div class="navdrop-content">
+      <a href="index.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a style="font-weight: bold;" href="blog.html">Blog</a>
+    </div>
+</div>
+</div> 
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+         element.className = "dark-mode";
+         element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+    }
+else{
+  element.className = "";
+  element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
+
+
+<div class="intro">
+<h1 style="margin-top: 25%; margin-bottom: 12%; font-size: 450%; text-align: center; color: goldenrod">Computational Imaging</h1>
+<!--<hr style="height: 0.5px; border: none; background-color: #ccc">-->
+<hr>
+<a class="head_link" href="dslr.html"><h2 style="margin-top: 5%; font-size: 150%">Deep Generalization of Structured Low-Rank Algorithms (Deep-SLR)</h2></a>
+<div style="font-weight: 100">In this blog post, we talk about structured low-rank matrix completion algorithms.
+</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
