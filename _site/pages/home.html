@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/styling/scripts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" type="text/css" href="/styling/styles.css">
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+              // ...options...
+        });
+    });
+</script>
+
+<!--<meta charset="utf-8">
+<title>home</title>-->
+</head>
+<body>
+
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="/pages/home.html">Aniket Pramanik</a></div>
+<div class="navdrop">
+  <div class="nav">
+  <div></div>
+  <div></div>
+  <div></div>
+  </div>
+  <div class="navdrop-content">
+    <a href="/pages/home.html">About</a>
+    <a href="/pages/experience.html">Experience</a>
+    <a href="/pages/publications.html">Publications</a>
+  </div>
+</div>
+</div>
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+       element.className = "dark-mode";
+       element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+  }
+else{
+element.className = "";
+element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
+
+<div class="intro">
+
+<div class="pic_container"><img src="sf_chicago.png" class="pic"></div>
+
+<div class="social">
+<span style="font-size:250%; padding-left: 2%">Aniket Pramanik</span>
+<br>
+<span style="padding-left: 2%; line-height: 300%">PhD Candidate at <a href="https://cbig.iibi.uiowa.edu/">CBIG Lab</a></span>
+<br>
+<a href="mailto:aniket-pramanik@uiowa.edu" class="fa fa-envelope"></a>
+<a href="https://twitter.com/anikpr_official" class="fa fa-twitter"></a>
+<a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en" class="ai ai-google-scholar"></a>
+<a href="https://github.com/anikpram" class="fa fa-github"></a>
+<a href="https://www.linkedin.com/in/aniket-pramanik-15b27378/" class="fa fa-linkedin"></a>
+
+</div>
+
+
+
+<div class="details">I am a final year student working towards a PhD in Computational Imaging from Electrical and
+Computer Engineering, The University of Iowa, Iowa City, IA, USA.
+<br>
+<br>
+<span style="font-weight:400">Research Interests:</span>
+Broadly, my research interest spans across Machine Learning, Deep Learning and Computational Imaging.
+I have gained experience in developing novel computational techniques for solving inverse imaging problems.
+Model-based image reconstruction using Deep Unrolled networks has been the hallmark of my research.
+My recent works are related to accelerated
+Magnetic Resonance Imaging (MRI) acquisition and recovery. MRI is a non-invasive, non-ionizing imaging
+system providing excellent soft tissue contrast at minimal risk. The slowness of MRI makes high resolution
+imaging expensive and time-consuming. My work focusses on reconstruction of high quality images
+from partial scans to facilitate accelerated data acquisition with accurate
+downstream tasks like segmentation for diagnostic purposes.
+<br>
+<br>
+<span style="font-weight:400">Other Interests:</span>
+I am a fitness enthusiast. For recreation, I love to run long distances. My longest run till now has been a
+<a href="https://www.athlinks.com/event/70981/results/Event/1017125/Course/2242829/Bib/253?source=internal">25Km (15.6 miles)</a>.
+I make it a point to run atleast 20 miles every week.
+I am a beginner in bouldering. Every route is like a brain-teaser and it gives me
+immense pleasure to figure out climbing those.
+Additionally, I love to sing and prepare covers of my favorite songs. Those can be found
+on my <a href="https://www.youtube.com/channel/UCzmMsEKVY0YeF3VVXwPjPZA/featured">youtube channel</a>.
+I aspire to learn electric guitar someday and play heavy metal!
+
+</div>
+
+
+
+<!--<div class="social">
+<a href="mailto:aniket-pramanik@uiowa.edu"><img src="email.png" class="sc_img" height="50"></a>
+<a href="https://twitter.com/anikpr_official"><img src="twitter.png" class="sc_img" height="50"></a>
+<a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en"><img src="google_scholar.png" class="sc_img" height="50"></a>
+<a href="https://www.linkedin.com/in/aniket-pramanik-15b27378/"><img src="linkedin.png" class="sc_img" height="50"></a>
+<a href="https://github.com/anikpram"><img src="github.png" class="sc_img" height="50"></a>
+</div>-->
+
+
+<!--<div style="height: 250px; background-color: green;"></div>-->
+<!--<div class="social">
+<a href="mailto:aniket-pramanik@uiowa.edu" class="fa fa-envelope"></a>
+<a href="https://twitter.com/anikpr_official" class="fa fa-twitter"></a>
+<a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en" class="ai ai-google-scholar"></a>
+<a href="https://github.com/anikpram" class="fa fa-github"></a>
+<a href="https://www.linkedin.com/in/aniket-pramanik-15b27378/" class="fa fa-linkedin"></a>
+</div>
+<div class="social_txt">Connect with me on these social platforms.</div>-->
+
+<div class="news">
+<h1>What's New</h1>
+<div style="margin-top: -25px">
+<table id="pub">
+<tr>
+  <td><div class="dates">May 25, 2021</div></td>
+  <td><div class="journal_details">Summer Internship at Genentech Inc., South San Francisco, USA</td>
+</tr>
+<tr>
+  <td><div class="dates">May 20, 2021</div></td>
+  <td><div class="journal_details">I received the <a href="https://www.ismrm.org/21/21-Summa.pdf">Summa Cum Laude Merit Award</a> for my abstract <a href="https://archive.ismrm.org/2021/0393.html">Image Domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI </a> at ISMRM 2021</td>
+</tr>
+<tr>
+  <td><div class="dates">Apr 10, 2019</div></td>
+  <td><div class="journal_details">My paper <a href="https://arxiv.org/abs/1812.10747">Off-the-grid model based deep learning (O-MODL)</a> received the <a href="https://biomedicalimaging.org/2019/isbi-2019-awards/">Best Machine Learning Paper Award</a> at the IEEE ISBI 2019 conference in Italy.</div></td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
