@@ -1,0 +1,141 @@
+{
+
+
+
+"conference": [
+
+  {
+    "title": "Off-the-grid model based deep learning (O-MoDL)",
+    "authors": "Aniket Pramanik, Hemant Aggarwal, Mathews Jacob",
+    "journal": "2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)",
+    "abstract": "We introduce a model based off-the grid image reconstruction algorithm using deep
+    learned priors. The main difference of the proposed scheme with current deep learning strategies
+    is the learning of non-linear annihilation relations in Fourier space. We rely on a model
+    based framework, which allows us to use a significantly smaller deep network, compared to
+    direct approaches that also learn how to invert the forward model. Preliminary comparisons against
+    image domain MoDL approach demonstrates the potential of the off-the-grid formulation.
+    The main benefit of the proposed scheme compared to structured low-rank methods is the quite
+    significant reduction in computational complexity.",
+    "bib": "@inproceedings{pramanik2019off, <br>
+      title={Off-the-grid model based deep learning (O-MODL)}, <br>
+      author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews}, <br>
+      booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)}, <br>
+      pages={1395--1398}, <br>
+      year={2019}, <br>
+      organization={IEEE} <br>
+      }",
+    "jbox": "ISBI",
+    "arxiv_link": "https://arxiv.org/abs/1812.10747",
+    "slides": " ",
+    "code": "https://github.com/anikpram/OMODL",
+    "date": "2019-04-01"
+
+  },
+
+
+  {
+    "title": "Calibrationless Parallel MRI Using Model Based Deep Learning (C-MODL)",
+    "authors": "Aniket Pramanik, Hemant Aggarwal, Mathews Jacob" ,
+    "journal": "2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI 2020)",
+    "abstract": "We introduce a fast model based deep learning approach for calibrationless parallel
+     MRI reconstruction. The proposed scheme is a non-linear generalization of structured low rank (SLR)
+     methods that self learn linear annihilation filters from the same subject. It pre-learns non-linear annihilation
+     relations in the Fourier domain from exemplar data. The pre-learning strategy significantly
+     reduces the computational complexity, making the proposed scheme three orders of magnitude
+     faster than SLR schemes. The proposed framework also allows the use of a complementary
+     spatial domain prior; the hybrid regularization scheme offers improved performance
+     over calibrated image domain MoDL approach. The calibrationless strategy minimizes
+     potential mismatches between calibration data and the main scan, while eliminating
+     the need for a fully sampled calibration region.",
+    "bib": "@inproceedings{pramanik2020calibrationless, <br>
+      title={Calibrationless parallel MRI using model based deep learning (C-MODL)},  <br>
+      author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews},  <br>
+      booktitle={2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)},  <br>
+      pages={1428--1431}, <br>
+      year={2020}, <br>
+      organization={IEEE} <br>
+      }",
+    "jbox": "ISBI",
+    "arxiv_link": "https://arxiv.org/abs/1911.12443",
+    "slides": " ",
+    "code": " ",
+    "date": "2020-04-01"
+
+  },
+
+
+
+  {
+    "title": "Reconstruction and Segmentation of Parallel MR Data using Image Domain DEEP-SLR",
+    "authors": "Aniket Pramanik, Mathews Jacob",
+    "journal": "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI 2021)",
+    "abstract": "The main focus of this work is a novel framework for the joint reconstruction and
+     segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network
+     for calibrationless recovery of undersampled PMRI data. The proposed approach is the
+     deep-learning (DL) based generalization of local low-rank based approaches for uncalibrated
+     PMRI recovery including CLEAR. Since the image domain approach exploits additional annihilation
+     relations compared to k-space based approaches, we expect it to offer improved performance.
+     To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed
+     scheme with a segmentation network and trained it in an end-to-end fashion. In addition
+     to reducing segmentation errors, this approach also offers improved reconstruction performance
+     by reducing overfitting; the reconstructed images exhibit reduced blurring and sharper
+     edges than independently trained reconstruction network." ,
+    "bib": "@inproceedings{pramanik2021reconstruction, <br>
+      title={Reconstruction and Segmentation of Parallel MR Data Using Image Domain Deep-SLR}, <br>
+      author={Pramanik, Aniket and Jacob, Mathews}, <br>
+      booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}, <br>
+      pages={1095--1098}, <br>
+      year={2021}, <br>
+      organization={IEEE} <br>
+      }",
+    "jbox": "ISBI",
+    "arxiv_link": "https://arxiv.org/abs/2102.01172",
+    "slides": " ",
+    "code": " ",
+    "date": "2021-04-01"
+
+  },
+
+
+
+
+
+  {
+    "title": "Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)",
+    "authors": "Aniket Pramanik, Mathews Jacob",
+    "journal": "2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI 2022)",
+    "abstract": "Model-based deep learning (MoDL) algorithms that rely on unrolling are emerging
+     as powerful tools for image recovery. In this work, we introduce a novel monotone operator learning
+     framework to overcome some of the challenges associated with current unrolled frameworks, including
+     high memory cost, lack of guarantees on robustness to perturbations, and low interpretability.
+     Unlike current unrolled architectures that use finite number of iterations, we use the deep
+     equilibrium (DEQ) framework to iterate the algorithm to convergence and to evaluate the gradient
+     of the convolutional neural network blocks using Jacobian iterations. This approach significantly
+     reduces the memory demand, facilitating the extension of MoDL algorithms to high dimensional
+     problems. We constrain the CNN to be a monotone operator, which allows us to introduce
+     algorithms with guaranteed convergence properties and robustness guarantees. We demonstrate
+     the utility of the proposed scheme in the context of parallel MRI." ,
+    "bib": "@inproceedings{pramanik2022improved, <br>
+      title={Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)}, <br>
+      author={Pramanik, Aniket and Jacob, Mathews}, <br>
+      booktitle={2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)}, <br>
+      pages={1--4}, <br>
+      year={2022}, <br>
+      organization={IEEE} <br>
+      }",
+    "jbox": "ISBI",
+    "arxiv_link": "https://arxiv.org/abs/2111.11380",
+    "slides": " ",
+    "code": " ",
+    "date": "2022-04-01"
+
+  }
+
+
+
+]
+
+
+
+
+}

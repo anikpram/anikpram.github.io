@@ -1,0 +1,330 @@
+---
+layout: pubs
+title: pubind
+---
+
+
+
+
+
+<script type="text/javascript">
+const selem = document.getElementById('all');
+selem.style.color = "black";
+selem.style.fontSize = "14px";
+selem.style.border = "1px solid goldenrod";
+selem.style.borderRadius = "2px";
+selem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+
+
+<div class="pub_box">
+
+<hr style="border-top: 1px dashed black;">
+
+<h2 style="margin-top: 3%; margin-bottom: 3%; line-height: 20px">Journals</h2>
+
+
+
+<table class="pub">
+
+
+
+{% assign sorted_article = site.data.journal.journal | sort: 'date' | reverse %}
+
+{% for pub in sorted_article %}
+
+<tr>
+  <td><div class="journal_box"><b>{{pub.jbox}}</b></div></td>
+  <td><div class="journal_details">{{pub.title}}</div>
+
+  {% assign authors = {{pub.authors}} | split: ", " %}
+
+
+
+
+    {% for member in authors %}
+
+      {% if member != {authors[-1]} %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>,
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>,
+
+        {% else %}
+          {{member}},
+
+        {% endif %}
+
+      {% else %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>.
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>.
+
+        {% else %}
+          {{member}}.
+
+        {% endif %}
+
+      {% endif %}
+
+
+    {% endfor %}
+
+
+
+  <br>
+  <i>{{pub.journal}}</i>
+  <br>
+  <button onclick="myFunction('{{pub.abstract}}')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
+
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
+
+  {% if slides != " " %}
+    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+  {% endif %}
+
+  {% if code != " " %}
+    <button onclick="location.href='code'" type="button", class="pub_button">Code</button>
+  {% endif %}
+
+
+
+  <div  id='{{pub.abstract}}'  class="dropdown-content-abstract">
+  {{pub.abstract}}
+  </div>
+
+  <div id='{{pub.bib}}' class="dropdown-content-abstract">
+  {{pub.bib}}
+  </div>
+
+   </td>
+  </tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+
+
+
+
+
+
+<div class="pub_box">
+
+<hr style="border-top: 1px dashed black;">
+
+<h2 style="margin-top: 3%; margin-bottom: 3%; line-height: 20px">Conferences</h2>
+
+
+<table class="pub">
+
+
+
+{% assign sorted_article = site.data.conference.conference | sort: 'date' | reverse %}
+
+{% for pub in sorted_article %}
+
+<tr>
+  <td><div class="journal_box"><b>{{pub.jbox}}</b></div></td>
+  <td><div class="journal_details">{{pub.title}}</div>
+
+  {% assign authors = {{pub.authors}} | split: ", " %}
+
+
+
+
+    {% for member in authors %}
+
+      {% if member != {{authors[-1]}} %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>,
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>,
+
+        {% else %}
+          {{member}},
+
+        {% endif %}
+
+      {% else %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>.
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>.
+
+        {% else %}
+          {{member}}.
+
+        {% endif %}
+
+      {% endif %}
+
+
+    {% endfor %}
+
+
+
+  <br>
+  <i>{{pub.journal}}</i>
+  <br>
+  <button onclick="myFunction('{{pub.abstract}}')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
+
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
+
+  {% if slides != " " %}
+    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+  {% endif %}
+
+  {% if code != " " %}
+    <button onclick="location.href='code'" type="button", class="pub_button">Code</button>
+  {% endif %}
+
+
+
+  <div  id='{{pub.abstract}}'  class="dropdown-content-abstract">
+  {{pub.abstract}}
+  </div>
+
+  <div id='{{pub.bib}}' class="dropdown-content-abstract">
+  {{pub.bib}}
+  </div>
+
+   </td>
+  </tr>
+
+{% endfor %}
+
+
+
+
+
+</table>
+
+</div>
+
+
+
+
+
+
+
+<div class="pub_box">
+
+<hr style="border-top: 1px dashed black;">
+
+<h2 style="margin-top: 3%; margin-bottom: 3%; line-height: 20px">Workshops and Abstracts</h2>
+
+
+<table class="pub">
+
+
+
+{% assign sorted_article = site.data.wab.wab | sort: 'date' | reverse %}
+
+{% for pub in sorted_article %}
+
+<tr>
+  <td><div class="journal_box"><b>{{pub.jbox}}</b></div></td>
+  <td><div class="journal_details">{{pub.title}}</div>
+
+  {% assign authors = {{pub.authors}} | split: ", " %}
+
+
+
+
+    {% for member in authors %}
+
+      {% if member != {{authors[-1]}} %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>,
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>,
+
+        {% else %}
+          {{member}},
+
+        {% endif %}
+
+      {% else %}
+
+        {% if member == "Aniket Pramanik" %}
+          <div class="me">{{member}}</div>.
+
+        {% elsif member == "Mathews Jacob" %}
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">{{member}}</a>.
+
+        {% else %}
+          {{member}}.
+
+        {% endif %}
+
+      {% endif %}
+
+
+    {% endfor %}
+
+
+
+  <br>
+  <i>{{pub.journal}}</i>
+  <br>
+  <button onclick="myFunction('{{pub.abstract}}')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
+
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
+
+  {% if slides != " " %}
+    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+  {% endif %}
+
+  {% if code != " " %}
+    <button onclick="location.href='code'" type="button", class="pub_button">Code</button>
+  {% endif %}
+
+
+
+  <div  id='{{pub.abstract}}'  class="dropdown-content-abstract">
+  {{pub.abstract}}
+  </div>
+
+  <div id='{{pub.bib}}' class="dropdown-content-abstract">
+  {{pub.bib}}
+  </div>
+
+   </td>
+  </tr>
+
+{% endfor %}
+
+
+
+
+
+</table>
+
+</div>

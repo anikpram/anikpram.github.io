@@ -1,0 +1,125 @@
+{
+
+
+
+  "journal": [
+
+    {
+      "title": "Stable and Memory-Efficient Image Recovery Using Monotone Operator Learning",
+      "authors": "Aniket Pramanik, Mathews Jacob",
+      "journal": "arXiv",
+      "abstract": "We introduce a monotone deep equilibrium learning framework for large-scale
+      inverse problems in imaging. The proposed algorithm relies on
+      forward-backward splitting, where each iteration consists of a gradient descent
+      involving the score function and a conjugate gradient algorithm to encourage data
+      consistency. The score function is modeled as a monotone convolutional neural
+      network. The use of a monotone operator offers several benefits, including
+      guaranteed convergence, uniqueness of fixed point, and robustness to input
+      perturbations, similar to the use of convex priors in compressive sensing. In
+      addition, the proposed formulation is significantly more memory-efficient than
+      unrolled methods, which allows us to apply it to 3D problems that current unrolled
+      algorithms cannot handle. Experiments show that the proposed scheme can offer
+      improved performance in 3D settings while being stable in the presence of input
+      perturbations.",
+      "bib": "@article{pramanik2022stable, <br>
+       title={Stable and memory-efficient image recovery using monotone operator learning (MOL)}, <br>
+       author={Pramanik, Aniket and Jacob, Mathews}, <br>
+       journal={arXiv preprint arXiv:2206.04797}, <br>
+       year={2022} <br>
+      }",
+      "jbox": "arXiv",
+      "arxiv_link": "https://arxiv.org/abs/2206.04797",
+      "slides": " ",
+      "code": " ",
+      "date": "2022-12-01"
+
+    },
+
+
+
+
+    {
+      "title": "Deep Generalization of Structured Low-Rank Algorithms (Deep-SLR)",
+      "authors": "Aniket Pramanik, Hemant Aggarwal, Mathews Jacob" ,
+      "journal": "IEEE Transactions on Medical Imaging",
+      "abstract": "Structured low-rank (SLR) algorithms, which exploit annihilation relations between the Fourier
+      samples of a signal resulting from different properties, is a powerful image reconstruction
+      framework in several applications. This scheme relies on low-rank matrix completion to estimate
+      the annihilation relations from the measurements. The main challenge with this strategy is the high
+      computational complexity of matrix completion. We introduce a deep learning (DL) approach to
+      significantly reduce the computational complexity. Specifically, we use a convolutional neural
+      network (CNN)-based filterbank that is trained to estimate the annihilation relations from
+      imperfect (under-sampled and noisy) k-space measurements of Magnetic Resonance Imaging (MRI). The
+      main reason for the computational efficiency is the pre-learning of the parameters of the non-linear
+      CNN from exemplar data, compared to SLR schemes that learn the linear filterbank parameters from
+      the dataset itself. Experimental comparisons show that the proposed scheme can enable
+      calibration-less parallel MRI; it can offer performance similar to SLR schemes while reducing the
+      runtime by around three orders of magnitude. Unlike pre-calibrated and self-calibrated approaches,
+      the proposed uncalibrated approach is insensitive to motion errors and affords higher acceleration.
+      The proposed scheme also incorporates image domain priors that are complementary, thus
+      significantly improving the performance over that of SLR schemes.",
+      "bib": "@article{pramanik2020deep, <br>
+       title={Deep generalization of structured low-rank algorithms (Deep-SLR)}, <br>
+       author={Pramanik, Aniket and Aggarwal, Hemant Kumar and Jacob, Mathews}, <br>
+       journal={IEEE transactions on medical imaging}, <br>
+       volume={39}, <br>
+       number={12}, <br>
+       pages={4186--4197}, <br>
+       year={2020}, <br>
+       publisher={IEEE} <br>
+      }",
+      "jbox": "TMI",
+      "arxiv_link": "https://arxiv.org/abs/1912.03433",
+      "slides": " ",
+      "code": "https://github.com/anikpram/Deep-SLR",
+      "date": "2020-06-01"
+
+    },
+
+
+
+
+    {
+      "title": "ENSURE: A General Approach for Unsupervised Training of Deep Image Reconstruction Algorithms",
+      "authors": "Hemant Aggarwal, Aniket Pramanik, Mathews Jacob",
+      "journal": "IEEE Transactions on Medical Imaging",
+      "abstract": "Image reconstruction using deep learning algorithms offers improved reconstruction quality and lower
+      reconstruction time than classical compressed sensing and model-based algorithms. Unfortunately, clean and
+      fully sampled ground-truth data to train the deep networks is often not available in several applications,
+      restricting the applicability of the above methods. This work introduces the ENsemble Stein's Unbiased Risk
+      Estimate (ENSURE) framework as a general approach to train deep image reconstruction algorithms without fully
+      sampled and noise-free images. The proposed framework is the generalization of the classical SURE and GSURE
+      formulation to the setting where the images are sampled by different measurement operators, chosen randomly
+      from a set. We show that the ENSURE loss function, which only uses the measurement data, is an unbiased
+      estimate for the true mean-square error. Our experiments show that the networks trained with this loss
+      function can offer reconstructions comparable to the supervised setting. While we demonstrate this framework
+      in the context of MR image recovery, the ENSURE framework is generally applicable to arbitrary inverse problems." ,
+      "bib": "@article{aggarwal2020ensure, <br>
+       title={ENSURE: A General Approach for Unsupervised Training of Deep Image Reconstruction Algorithms}, <br>
+       author={Aggarwal, Hemant Kumar and Pramanik, Aniket and Jacob, Mathews}, <br>
+       journal={arXiv preprint arXiv:2010.10631}, <br>
+       year={2020} <br>
+      }",
+      "jbox": "TMI",
+      "arxiv_link": "https://arxiv.org/abs/2010.10631",
+      "slides": " ",
+      "code": " ",
+      "date": "2022-11-01"
+
+    }
+
+
+
+
+
+
+
+
+  ]
+
+
+
+
+
+
+}

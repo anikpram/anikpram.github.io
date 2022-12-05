@@ -1,0 +1,29 @@
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="{{ site.baseurl }}{% link index.html %}">Aniket Pramanik</a></div>
+
+<div style="margin-top: 1%; display: block; text-align: center;">
+
+<button onclick="location.href='{{ site.baseurl }}{% link index.html %}'" type="button", class="nav_btn", id="abt">About</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='{{ site.baseurl }}{% link experience.html %}'" type="button", class="nav_btn", id="exp">Experience</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='{{ site.baseurl }}{% link pub_index.html %}'" type="button", class="nav_btn", id="publ">Publications</button>
+
+
+
+</div>
+
+</div>
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+       element.className = "dark-mode";
+       element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+  }
+else{
+element.className = "";
+element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>

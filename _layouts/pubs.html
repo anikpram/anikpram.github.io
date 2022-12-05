@@ -1,0 +1,48 @@
+---
+layout: default
+title: pubs
+---
+
+
+
+<div class="intro">
+
+<h1 style="margin-top: 30%; margin-bottom: 7%; line-height: 20px">Publications</h1>
+
+<span style="margin-top: 10%; margin-bottom: 10%">Please see my <a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en">Google Scholar</a> for a full list of publications.</span>
+
+
+
+<div style="margin-top: 5%; margin-bottom: 3%;">
+
+
+<button onclick="location.href='{{site.baseurl}}{% link pub_index.html %}'" type="button", class="page_btn", id="all">All</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/journal.html'" type="button", class="page_btn", id="jn">Journals</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/conference.html'" type="button", class="page_btn", id="cn">Conferences</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/wab.html'" type="button", class="page_btn", id="wa">Workshops and Abstracts</button>
+
+
+</div>
+
+
+<script type="text/javascript">
+const elem = document.getElementById('publ');
+elem.style.color = "black";
+elem.style.border = "1px solid goldenrod";
+elem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+</div>
+
+
+
+
+
+<div class="intro">
+{{ content }}
+</div>

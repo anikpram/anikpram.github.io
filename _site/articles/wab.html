@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/styling/scripts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" type="text/css" href="/styling/styles.css">
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+              // ...options...
+        });
+    });
+</script>
+
+<!--<meta charset="utf-8">
+<title>wab</title>-->
+</head>
+<body>
+
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="/">Aniket Pramanik</a></div>
+
+<div style="margin-top: 1%; display: block; text-align: center;">
+
+<button onclick="location.href='/'" type="button", class="nav_btn", id="abt">About</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='/experience.html'" type="button", class="nav_btn", id="exp">Experience</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='/pub_index.html'" type="button", class="nav_btn", id="publ">Publications</button>
+
+
+
+</div>
+
+</div>
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+       element.className = "dark-mode";
+       element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+  }
+else{
+element.className = "";
+element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
+
+
+
+<div class="intro">
+
+<h1 style="margin-top: 30%; margin-bottom: 7%; line-height: 20px">Publications</h1>
+
+<span style="margin-top: 10%; margin-bottom: 10%">Please see my <a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en">Google Scholar</a> for a full list of publications.</span>
+
+
+
+<div style="margin-top: 5%; margin-bottom: 3%;">
+
+
+<button onclick="location.href='/pub_index.html'" type="button", class="page_btn", id="all">All</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/journal.html'" type="button", class="page_btn", id="jn">Journals</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/conference.html'" type="button", class="page_btn", id="cn">Conferences</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/wab.html'" type="button", class="page_btn", id="wa">Workshops and Abstracts</button>
+
+
+</div>
+
+
+<script type="text/javascript">
+const elem = document.getElementById('publ');
+elem.style.color = "black";
+elem.style.border = "1px solid goldenrod";
+elem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+</div>
+
+
+
+
+
+<div class="intro">
+<script type="text/javascript">
+const selem = document.getElementById('wa');
+selem.style.color = "black";
+selem.style.fontSize = "14px";
+selem.style.border = "1px solid goldenrod";
+selem.style.borderRadius = "2px";
+selem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+
+
+
+<div class="pub_box">
+
+
+<hr style="border-top: 1px dashed black;">
+
+<h2 style="margin-top: 3%; margin-bottom: 3%; line-height: 20px">Workshops and Abstracts</h2>
+
+
+<table class="pub">
+
+
+
+
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ECCV</b></div></td>
+  <td><div class="journal_details">Joint Calibrationless Reconstruction and Segmentation of Parallel MRI</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2022 ECCV Medical Computer Vision Workshop (ECCV-MCV 2022)</i>
+  <br>
+  <button onclick="myFunction('The volume estimation of brain regions from MRI data is a key problem in many clinical applications, where the acquisition of data at high spatial resolution is desirable. While parallel MRI and constrained image reconstruction algorithms can accelerate the scans, image reconstruction artifacts are inevitable, especially at high acceleration factors. We introduce a novel image domain deep-learning framework for calibrationless parallel MRI reconstruction, coupled with a segmentation network to improve image quality and to reduce the vulnerability of current segmentation algorithms to image artifacts resulting from acceleration. The combination of the proposed image domain deep calibrationless approach with the segmentation algorithm offers improved image quality, while increasing the accuracy of the segmentations. The novel architecture with an encoder shared between the reconstruction and segmentation tasks is seen to reduce the need for segmented training datasets. In particular, the proposed few-shot training strategy requires only 10% of segmented datasets to offer good performance.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@article{pramanik2021joint, <br> title={Joint calibrationless reconstruction and segmentation of parallel MRI}, <br> author={Pramanik, Aniket and Wu, Xiaodong and Jacob, Mathews}, <br> journal={arXiv preprint arXiv:2105.09220}, <br> year={2021} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://arxiv.org/abs/2105.09220'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='The volume estimation of brain regions from MRI data is a key problem in many clinical applications, where the acquisition of data at high spatial resolution is desirable. While parallel MRI and constrained image reconstruction algorithms can accelerate the scans, image reconstruction artifacts are inevitable, especially at high acceleration factors. We introduce a novel image domain deep-learning framework for calibrationless parallel MRI reconstruction, coupled with a segmentation network to improve image quality and to reduce the vulnerability of current segmentation algorithms to image artifacts resulting from acceleration. The combination of the proposed image domain deep calibrationless approach with the segmentation algorithm offers improved image quality, while increasing the accuracy of the segmentations. The novel architecture with an encoder shared between the reconstruction and segmentation tasks is seen to reduce the need for segmented training datasets. In particular, the proposed few-shot training strategy requires only 10% of segmented datasets to offer good performance.'  class="dropdown-content-abstract">
+  The volume estimation of brain regions from MRI data is a key problem in many clinical applications, where the acquisition of data at high spatial resolution is desirable. While parallel MRI and constrained image reconstruction algorithms can accelerate the scans, image reconstruction artifacts are inevitable, especially at high acceleration factors. We introduce a novel image domain deep-learning framework for calibrationless parallel MRI reconstruction, coupled with a segmentation network to improve image quality and to reduce the vulnerability of current segmentation algorithms to image artifacts resulting from acceleration. The combination of the proposed image domain deep calibrationless approach with the segmentation algorithm offers improved image quality, while increasing the accuracy of the segmentations. The novel architecture with an encoder shared between the reconstruction and segmentation tasks is seen to reduce the need for segmented training datasets. In particular, the proposed few-shot training strategy requires only 10% of segmented datasets to offer good performance.
+  </div>
+
+  <div id='@article{pramanik2021joint, <br> title={Joint calibrationless reconstruction and segmentation of parallel MRI}, <br> author={Pramanik, Aniket and Wu, Xiaodong and Jacob, Mathews}, <br> journal={arXiv preprint arXiv:2105.09220}, <br> year={2021} <br> }' class="dropdown-content-abstract">
+  @article{pramanik2021joint, <br> title={Joint calibrationless reconstruction and segmentation of parallel MRI}, <br> author={Pramanik, Aniket and Wu, Xiaodong and Jacob, Mathews}, <br> journal={arXiv preprint arXiv:2105.09220}, <br> year={2021} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>MICCAI</b></div></td>
+  <td><div class="journal_details">Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          Anitha Priya Krishnan,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Roshan Reddy,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Zhuang Song,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Richard A.D. Carano.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2022 MICCAI International Workshop on Simulation and Synthesis in Medical Imaging (SASHIMI 2022)</i>
+  <br>
+  <button onclick="myFunction('Spatial resolution plays a crucial role in quantitative assessment of various structures in brain MRI. Super resolution (SR) as a post-processing tool holds promise for restoring the high frequency details lost in a low resolution (LR) acquisition with no additional scan time. Prior multicontrast deep learning SR approaches are mostly in 2D and operate in a pre-upsampling or progressive setting. Here we propose an efficient shallow 3D projection based post-upsampling network for anisotropic SR of brain MRI. The network is optimized using losses in the spatial and frequency domains and a complementary high resolution (HR) input to inform SR of the low resolution (LR) input with tighter integration of features. We investigated the benefit of different feature aggregation strategies such as concatenation and multiplicative attention and gradient guidance from the HR target or the additional HR input. The models were trained and evaluated on diverse datasets and performed comparably with MINet, another recently developed multimodal SR model, with approximately half the number of model parameters. The model generalized well to an external test set; performed satisfactorily on acquired LR MRI volumes despite the LR input being simulated from HR volumes during training and resulted in lower high frequency error norm. From the ablation studies, we note that a multimodal network noticeably improves SR compared to a unimodal network and feature aggregation using concatenation and multiplicative attention performed equally well. We also highlight the leakage of information from the complementary HR input to the SR output volume and the limited value of PSNR and SSIM as evaluation metrics in such cases.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{krishnan2022multimodal, <br> title={Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance}, <br> author={Krishnan, Anitha Priya and Upendra, Roshan Reddy and Pramanik, Aniket and Song, Zhuang and Carano, Richard AD}, <br> booktitle={International Workshop on Simulation and Synthesis in Medical Imaging}, <br> pages={91--100}, <br> year={2022}, <br> organization={Springer} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://link.springer.com/chapter/10.1007/978-3-031-16980-9_9'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='Spatial resolution plays a crucial role in quantitative assessment of various structures in brain MRI. Super resolution (SR) as a post-processing tool holds promise for restoring the high frequency details lost in a low resolution (LR) acquisition with no additional scan time. Prior multicontrast deep learning SR approaches are mostly in 2D and operate in a pre-upsampling or progressive setting. Here we propose an efficient shallow 3D projection based post-upsampling network for anisotropic SR of brain MRI. The network is optimized using losses in the spatial and frequency domains and a complementary high resolution (HR) input to inform SR of the low resolution (LR) input with tighter integration of features. We investigated the benefit of different feature aggregation strategies such as concatenation and multiplicative attention and gradient guidance from the HR target or the additional HR input. The models were trained and evaluated on diverse datasets and performed comparably with MINet, another recently developed multimodal SR model, with approximately half the number of model parameters. The model generalized well to an external test set; performed satisfactorily on acquired LR MRI volumes despite the LR input being simulated from HR volumes during training and resulted in lower high frequency error norm. From the ablation studies, we note that a multimodal network noticeably improves SR compared to a unimodal network and feature aggregation using concatenation and multiplicative attention performed equally well. We also highlight the leakage of information from the complementary HR input to the SR output volume and the limited value of PSNR and SSIM as evaluation metrics in such cases.'  class="dropdown-content-abstract">
+  Spatial resolution plays a crucial role in quantitative assessment of various structures in brain MRI. Super resolution (SR) as a post-processing tool holds promise for restoring the high frequency details lost in a low resolution (LR) acquisition with no additional scan time. Prior multicontrast deep learning SR approaches are mostly in 2D and operate in a pre-upsampling or progressive setting. Here we propose an efficient shallow 3D projection based post-upsampling network for anisotropic SR of brain MRI. The network is optimized using losses in the spatial and frequency domains and a complementary high resolution (HR) input to inform SR of the low resolution (LR) input with tighter integration of features. We investigated the benefit of different feature aggregation strategies such as concatenation and multiplicative attention and gradient guidance from the HR target or the additional HR input. The models were trained and evaluated on diverse datasets and performed comparably with MINet, another recently developed multimodal SR model, with approximately half the number of model parameters. The model generalized well to an external test set; performed satisfactorily on acquired LR MRI volumes despite the LR input being simulated from HR volumes during training and resulted in lower high frequency error norm. From the ablation studies, we note that a multimodal network noticeably improves SR compared to a unimodal network and feature aggregation using concatenation and multiplicative attention performed equally well. We also highlight the leakage of information from the complementary HR input to the SR output volume and the limited value of PSNR and SSIM as evaluation metrics in such cases.
+  </div>
+
+  <div id='@inproceedings{krishnan2022multimodal, <br> title={Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance}, <br> author={Krishnan, Anitha Priya and Upendra, Roshan Reddy and Pramanik, Aniket and Song, Zhuang and Carano, Richard AD}, <br> booktitle={International Workshop on Simulation and Synthesis in Medical Imaging}, <br> pages={91--100}, <br> year={2022}, <br> organization={Springer} <br> }' class="dropdown-content-abstract">
+  @inproceedings{krishnan2022multimodal, <br> title={Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance}, <br> author={Krishnan, Anitha Priya and Upendra, Roshan Reddy and Pramanik, Aniket and Song, Zhuang and Carano, Richard AD}, <br> booktitle={International Workshop on Simulation and Synthesis in Medical Imaging}, <br> pages={91--100}, <br> year={2022}, <br> organization={Springer} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISMRM</b></div></td>
+  <td><div class="journal_details">Image domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2021 The International Society for Magnetic Resonance in Medicine Annual Meeting (ISMRM 2021)</i>
+  <br>
+  <button onclick="myFunction('We present a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. It is deep-learning based generalization of local low-rank approaches for uncalibrated PMRI recovery including CLEAR. The image domain approach exploits additional annihilation relations compared to k-space based approaches and hence offers improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it end-to-end. It offers improved reconstruction with reduced blurring and sharper edges than independently trained reconstruction network.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanikimage, <br> title={Image domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 ISMRM}, <br> year={2021}, <br> organization={ISMRM} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://archive.ismrm.org/2021/0393.html'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='We present a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. It is deep-learning based generalization of local low-rank approaches for uncalibrated PMRI recovery including CLEAR. The image domain approach exploits additional annihilation relations compared to k-space based approaches and hence offers improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it end-to-end. It offers improved reconstruction with reduced blurring and sharper edges than independently trained reconstruction network.'  class="dropdown-content-abstract">
+  We present a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. It is deep-learning based generalization of local low-rank approaches for uncalibrated PMRI recovery including CLEAR. The image domain approach exploits additional annihilation relations compared to k-space based approaches and hence offers improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it end-to-end. It offers improved reconstruction with reduced blurring and sharper edges than independently trained reconstruction network.
+  </div>
+
+  <div id='@inproceedings{pramanikimage, <br> title={Image domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 ISMRM}, <br> year={2021}, <br> organization={ISMRM} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanikimage, <br> title={Image domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 ISMRM}, <br> year={2021}, <br> organization={ISMRM} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISMRM</b></div></td>
+  <td><div class="journal_details">Model based Deep Learning for Calibrationless Parallel MRI recovery</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Hemant Aggarwal,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2020 The International Society for Magnetic Resonance in Medicine Annual Meeting (ISMRM 2020)</i>
+  <br>
+  <button onclick="myFunction('We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low-rank (SLR) methods that self learn linear annihilation filters. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data which significantly reduces the computational complexity, making it three orders of magnitude faster than SLR schemes. It allows incorporation of spatial domain prior that offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanikmodel, <br> title={Model based Deep Learning for Calibrationless Parallel MRI recovery}, <br> author={Pramanik, Aniket and Aggarwal, Hemant Kumar and Jacob, Mathews}, <br> booktitle={2020 ISMRM}, <br> year={2020}, <br> organization={ISMRM} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://archive.ismrm.org/2020/3436.html'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low-rank (SLR) methods that self learn linear annihilation filters. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data which significantly reduces the computational complexity, making it three orders of magnitude faster than SLR schemes. It allows incorporation of spatial domain prior that offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.'  class="dropdown-content-abstract">
+  We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low-rank (SLR) methods that self learn linear annihilation filters. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data which significantly reduces the computational complexity, making it three orders of magnitude faster than SLR schemes. It allows incorporation of spatial domain prior that offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.
+  </div>
+
+  <div id='@inproceedings{pramanikmodel, <br> title={Model based Deep Learning for Calibrationless Parallel MRI recovery}, <br> author={Pramanik, Aniket and Aggarwal, Hemant Kumar and Jacob, Mathews}, <br> booktitle={2020 ISMRM}, <br> year={2020}, <br> organization={ISMRM} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanikmodel, <br> title={Model based Deep Learning for Calibrationless Parallel MRI recovery}, <br> author={Pramanik, Aniket and Aggarwal, Hemant Kumar and Jacob, Mathews}, <br> booktitle={2020 ISMRM}, <br> year={2020}, <br> organization={ISMRM} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+
+
+
+
+</table>
+
+
+</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

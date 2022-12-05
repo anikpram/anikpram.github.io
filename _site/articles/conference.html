@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/styling/scripts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" type="text/css" href="/styling/styles.css">
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+              // ...options...
+        });
+    });
+</script>
+
+<!--<meta charset="utf-8">
+<title>conferences</title>-->
+</head>
+<body>
+
+<div class="navbar">
+<div class="mode_button"><i onclick="myDark(this)" class="fa fa-moon-o"></i></div>
+<div class="navbar_txt"><a href="/">Aniket Pramanik</a></div>
+
+<div style="margin-top: 1%; display: block; text-align: center;">
+
+<button onclick="location.href='/'" type="button", class="nav_btn", id="abt">About</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='/experience.html'" type="button", class="nav_btn", id="exp">Experience</button>
+<span style="color: goldenrod">&#47;</span>
+<button onclick="location.href='/pub_index.html'" type="button", class="nav_btn", id="publ">Publications</button>
+
+
+
+</div>
+
+</div>
+
+<script>
+var element = document.body;
+if(localStorage.getItem("mode") == "dark") {
+       element.className = "dark-mode";
+       element.getElementsByTagName("i")[0].className = "fa fa-sun-o";
+  }
+else{
+element.className = "";
+element.getElementsByTagName("i")[0].className = "fa fa-moon-o";
+}
+</script>
+
+
+
+
+<div class="intro">
+
+<h1 style="margin-top: 30%; margin-bottom: 7%; line-height: 20px">Publications</h1>
+
+<span style="margin-top: 10%; margin-bottom: 10%">Please see my <a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en">Google Scholar</a> for a full list of publications.</span>
+
+
+
+<div style="margin-top: 5%; margin-bottom: 3%;">
+
+
+<button onclick="location.href='/pub_index.html'" type="button", class="page_btn", id="all">All</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/journal.html'" type="button", class="page_btn", id="jn">Journals</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/conference.html'" type="button", class="page_btn", id="cn">Conferences</button>
+<span class="slash">&#47;</span>
+<button onclick="location.href='/articles/wab.html'" type="button", class="page_btn", id="wa">Workshops and Abstracts</button>
+
+
+</div>
+
+
+<script type="text/javascript">
+const elem = document.getElementById('publ');
+elem.style.color = "black";
+elem.style.border = "1px solid goldenrod";
+elem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+</div>
+
+
+
+
+
+<div class="intro">
+<script type="text/javascript">
+const selem = document.getElementById('cn');
+selem.style.color = "black";
+selem.style.fontSize = "14px";
+selem.style.border = "1px solid goldenrod";
+selem.style.borderRadius = "2px";
+selem.style.backgroundColor = "goldenrod";
+</script>
+
+
+
+
+
+<div class="pub_box">
+
+<hr style=" border-top: 1px dashed black;">
+
+<h2 style="margin-top: 3%; margin-bottom: 3%; line-height: 20px">Conferences</h2>
+
+
+<table class="pub">
+
+
+
+
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISBI</b></div></td>
+  <td><div class="journal_details">Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI 2022)</i>
+  <br>
+  <button onclick="myFunction('Model-based deep learning (MoDL) algorithms that rely on unrolling are emerging as powerful tools for image recovery. In this work, we introduce a novel monotone operator learning framework to overcome some of the challenges associated with current unrolled frameworks, including high memory cost, lack of guarantees on robustness to perturbations, and low interpretability. Unlike current unrolled architectures that use finite number of iterations, we use the deep equilibrium (DEQ) framework to iterate the algorithm to convergence and to evaluate the gradient of the convolutional neural network blocks using Jacobian iterations. This approach significantly reduces the memory demand, facilitating the extension of MoDL algorithms to high dimensional problems. We constrain the CNN to be a monotone operator, which allows us to introduce algorithms with guaranteed convergence properties and robustness guarantees. We demonstrate the utility of the proposed scheme in the context of parallel MRI.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanik2022improved, <br> title={Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1--4}, <br> year={2022}, <br> organization={IEEE} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://arxiv.org/abs/2111.11380'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='Model-based deep learning (MoDL) algorithms that rely on unrolling are emerging as powerful tools for image recovery. In this work, we introduce a novel monotone operator learning framework to overcome some of the challenges associated with current unrolled frameworks, including high memory cost, lack of guarantees on robustness to perturbations, and low interpretability. Unlike current unrolled architectures that use finite number of iterations, we use the deep equilibrium (DEQ) framework to iterate the algorithm to convergence and to evaluate the gradient of the convolutional neural network blocks using Jacobian iterations. This approach significantly reduces the memory demand, facilitating the extension of MoDL algorithms to high dimensional problems. We constrain the CNN to be a monotone operator, which allows us to introduce algorithms with guaranteed convergence properties and robustness guarantees. We demonstrate the utility of the proposed scheme in the context of parallel MRI.'  class="dropdown-content-abstract">
+  Model-based deep learning (MoDL) algorithms that rely on unrolling are emerging as powerful tools for image recovery. In this work, we introduce a novel monotone operator learning framework to overcome some of the challenges associated with current unrolled frameworks, including high memory cost, lack of guarantees on robustness to perturbations, and low interpretability. Unlike current unrolled architectures that use finite number of iterations, we use the deep equilibrium (DEQ) framework to iterate the algorithm to convergence and to evaluate the gradient of the convolutional neural network blocks using Jacobian iterations. This approach significantly reduces the memory demand, facilitating the extension of MoDL algorithms to high dimensional problems. We constrain the CNN to be a monotone operator, which allows us to introduce algorithms with guaranteed convergence properties and robustness guarantees. We demonstrate the utility of the proposed scheme in the context of parallel MRI.
+  </div>
+
+  <div id='@inproceedings{pramanik2022improved, <br> title={Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1--4}, <br> year={2022}, <br> organization={IEEE} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanik2022improved, <br> title={Improved Model Based Deep Learning Using Monotone Operator Learning (Mol)}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1--4}, <br> year={2022}, <br> organization={IEEE} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISBI</b></div></td>
+  <td><div class="journal_details">Reconstruction and Segmentation of Parallel MR Data using Image Domain DEEP-SLR</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI 2021)</i>
+  <br>
+  <button onclick="myFunction('The main focus of this work is a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. The proposed approach is the deep-learning (DL) based generalization of local low-rank based approaches for uncalibrated PMRI recovery including CLEAR. Since the image domain approach exploits additional annihilation relations compared to k-space based approaches, we expect it to offer improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it in an end-to-end fashion. In addition to reducing segmentation errors, this approach also offers improved reconstruction performance by reducing overfitting; the reconstructed images exhibit reduced blurring and sharper edges than independently trained reconstruction network.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanik2021reconstruction, <br> title={Reconstruction and Segmentation of Parallel MR Data Using Image Domain Deep-SLR}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1095--1098}, <br> year={2021}, <br> organization={IEEE} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://arxiv.org/abs/2102.01172'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='The main focus of this work is a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. The proposed approach is the deep-learning (DL) based generalization of local low-rank based approaches for uncalibrated PMRI recovery including CLEAR. Since the image domain approach exploits additional annihilation relations compared to k-space based approaches, we expect it to offer improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it in an end-to-end fashion. In addition to reducing segmentation errors, this approach also offers improved reconstruction performance by reducing overfitting; the reconstructed images exhibit reduced blurring and sharper edges than independently trained reconstruction network.'  class="dropdown-content-abstract">
+  The main focus of this work is a novel framework for the joint reconstruction and segmentation of parallel MRI (PMRI) brain data. We introduce an image domain deep network for calibrationless recovery of undersampled PMRI data. The proposed approach is the deep-learning (DL) based generalization of local low-rank based approaches for uncalibrated PMRI recovery including CLEAR. Since the image domain approach exploits additional annihilation relations compared to k-space based approaches, we expect it to offer improved performance. To minimize segmentation errors resulting from undersampling artifacts, we combined the proposed scheme with a segmentation network and trained it in an end-to-end fashion. In addition to reducing segmentation errors, this approach also offers improved reconstruction performance by reducing overfitting; the reconstructed images exhibit reduced blurring and sharper edges than independently trained reconstruction network.
+  </div>
+
+  <div id='@inproceedings{pramanik2021reconstruction, <br> title={Reconstruction and Segmentation of Parallel MR Data Using Image Domain Deep-SLR}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1095--1098}, <br> year={2021}, <br> organization={IEEE} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanik2021reconstruction, <br> title={Reconstruction and Segmentation of Parallel MR Data Using Image Domain Deep-SLR}, <br> author={Pramanik, Aniket and Jacob, Mathews}, <br> booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}, <br> pages={1095--1098}, <br> year={2021}, <br> organization={IEEE} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISBI</b></div></td>
+  <td><div class="journal_details">Calibrationless Parallel MRI Using Model Based Deep Learning (C-MODL)</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Hemant Aggarwal,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI 2020)</i>
+  <br>
+  <button onclick="myFunction('We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low rank (SLR) methods that self learn linear annihilation filters from the same subject. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data. The pre-learning strategy significantly reduces the computational complexity, making the proposed scheme three orders of magnitude faster than SLR schemes. The proposed framework also allows the use of a complementary spatial domain prior; the hybrid regularization scheme offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanik2020calibrationless, <br> title={Calibrationless parallel MRI using model based deep learning (C-MODL)},  <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews},  <br> booktitle={2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)},  <br> pages={1428--1431}, <br> year={2020}, <br> organization={IEEE} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://arxiv.org/abs/1911.12443'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+
+
+
+  <div  id='We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low rank (SLR) methods that self learn linear annihilation filters from the same subject. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data. The pre-learning strategy significantly reduces the computational complexity, making the proposed scheme three orders of magnitude faster than SLR schemes. The proposed framework also allows the use of a complementary spatial domain prior; the hybrid regularization scheme offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.'  class="dropdown-content-abstract">
+  We introduce a fast model based deep learning approach for calibrationless parallel MRI reconstruction. The proposed scheme is a non-linear generalization of structured low rank (SLR) methods that self learn linear annihilation filters from the same subject. It pre-learns non-linear annihilation relations in the Fourier domain from exemplar data. The pre-learning strategy significantly reduces the computational complexity, making the proposed scheme three orders of magnitude faster than SLR schemes. The proposed framework also allows the use of a complementary spatial domain prior; the hybrid regularization scheme offers improved performance over calibrated image domain MoDL approach. The calibrationless strategy minimizes potential mismatches between calibration data and the main scan, while eliminating the need for a fully sampled calibration region.
+  </div>
+
+  <div id='@inproceedings{pramanik2020calibrationless, <br> title={Calibrationless parallel MRI using model based deep learning (C-MODL)},  <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews},  <br> booktitle={2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)},  <br> pages={1428--1431}, <br> year={2020}, <br> organization={IEEE} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanik2020calibrationless, <br> title={Calibrationless parallel MRI using model based deep learning (C-MODL)},  <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews},  <br> booktitle={2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)},  <br> pages={1428--1431}, <br> year={2020}, <br> organization={IEEE} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+<tr>
+  <td><div class="journal_box"><b>ISBI</b></div></td>
+  <td><div class="journal_details">Off-the-grid model based deep learning (O-MoDL)</div>
+
+  
+
+
+
+
+    
+
+      
+
+        
+          <div class="me">Aniket Pramanik</div>,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          Hemant Aggarwal,
+
+        
+
+      
+
+
+    
+
+      
+
+        
+          <a class="advisor" href="https://engineering.uiowa.edu/people/mathews-jacob">Mathews Jacob</a>.
+
+        
+
+      
+
+
+    
+
+
+
+  <br>
+  <i>2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)</i>
+  <br>
+  <button onclick="myFunction('We introduce a model based off-the grid image reconstruction algorithm using deep learned priors. The main difference of the proposed scheme with current deep learning strategies is the learning of non-linear annihilation relations in Fourier space. We rely on a model based framework, which allows us to use a significantly smaller deep network, compared to direct approaches that also learn how to invert the forward model. Preliminary comparisons against image domain MoDL approach demonstrates the potential of the off-the-grid formulation. The main benefit of the proposed scheme compared to structured low-rank methods is the quite significant reduction in computational complexity.')" type="button", class="dropbtn">Abstract</button>
+  <button onclick="myFunction('@inproceedings{pramanik2019off, <br> title={Off-the-grid model based deep learning (O-MODL)}, <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews}, <br> booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)}, <br> pages={1395--1398}, <br> year={2019}, <br> organization={IEEE} <br> }')" type="button", class="dropbtn">BiB</button>
+  <button onclick="location.href='https://arxiv.org/abs/1812.10747'" type="button", class="pub_button">Arxiv</button>
+
+  
+  
+
+  
+
+  
+    <button onclick="location.href='code'" type="button", class="pub_button">Code</button>
+  
+
+
+
+  <div  id='We introduce a model based off-the grid image reconstruction algorithm using deep learned priors. The main difference of the proposed scheme with current deep learning strategies is the learning of non-linear annihilation relations in Fourier space. We rely on a model based framework, which allows us to use a significantly smaller deep network, compared to direct approaches that also learn how to invert the forward model. Preliminary comparisons against image domain MoDL approach demonstrates the potential of the off-the-grid formulation. The main benefit of the proposed scheme compared to structured low-rank methods is the quite significant reduction in computational complexity.'  class="dropdown-content-abstract">
+  We introduce a model based off-the grid image reconstruction algorithm using deep learned priors. The main difference of the proposed scheme with current deep learning strategies is the learning of non-linear annihilation relations in Fourier space. We rely on a model based framework, which allows us to use a significantly smaller deep network, compared to direct approaches that also learn how to invert the forward model. Preliminary comparisons against image domain MoDL approach demonstrates the potential of the off-the-grid formulation. The main benefit of the proposed scheme compared to structured low-rank methods is the quite significant reduction in computational complexity.
+  </div>
+
+  <div id='@inproceedings{pramanik2019off, <br> title={Off-the-grid model based deep learning (O-MODL)}, <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews}, <br> booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)}, <br> pages={1395--1398}, <br> year={2019}, <br> organization={IEEE} <br> }' class="dropdown-content-abstract">
+  @inproceedings{pramanik2019off, <br> title={Off-the-grid model based deep learning (O-MODL)}, <br> author={Pramanik, Aniket and Aggarwal, Hemant and Jacob, Mathews}, <br> booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)}, <br> pages={1395--1398}, <br> year={2019}, <br> organization={IEEE} <br> }
+  </div>
+
+   </td>
+  </tr>
+
+
+
+
+
+
+
+</table>
+
+</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
