@@ -1,5 +1,8 @@
 /* Place your CSS styles in this file */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:200regular');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300light');
+
 
 body {
   background-color: white;
@@ -170,14 +173,14 @@ hr{
 
 
 h1 {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 40px;
 }
 
 
 h2 {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 30px;
 }
@@ -225,7 +228,7 @@ h2 {
 
 
 .navbar_txt{
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 20px;
   padding-top: 8px;
@@ -303,7 +306,7 @@ h2 {
   margin-top: 5%;
   background-color: none;
   width: 100%;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   text-align: justify;
   float: left;
@@ -379,7 +382,7 @@ h2 {
 
 
 .dates{
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -397,7 +400,7 @@ h2 {
 .edu_details{
   line-height: 1.5;
   padding-left: 10%;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 
@@ -425,14 +428,14 @@ h2 {
 }
 
 .pub td:nth-child(1){
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-top: 5px;
   width: auto;
 }
 
 .pub td:nth-child(2){
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   line-height: 1.5;
   width: auto;
@@ -639,8 +642,8 @@ h2 {
 
 
 .journal_details{
-  font-family: Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 
@@ -703,7 +706,7 @@ a:hover {
 
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .topnav {
