@@ -505,6 +505,21 @@ h2 {
 }
 
 
+.page_btn:hover{
+  border: 1px solid goldenrod;
+  color: black;
+  background-color: goldenrod;
+}
+
+
+
+.page_btn:active{
+  border: 1px solid goldenrod;
+  color: black;
+  background-color: goldenrod;
+}
+
+
 
 
 
