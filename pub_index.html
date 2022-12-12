@@ -87,7 +87,8 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
 
   {% if slides != " " %}
     <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
@@ -188,7 +189,8 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
 
   {% if slides != " " %}
     <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
@@ -293,7 +295,8 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-  
+  {% assign slides = {{pub.slides}} %}
+  {% assign code = {{pub.code}} %}
 
   {% if slides != " " %}
     <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
