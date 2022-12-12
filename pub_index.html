@@ -87,15 +87,14 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-  {% assign slides = {{pub.slides}} %}
-  {% assign code = {{pub.code}} %}
+
 
   {% if slides != " " %}
-    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+    <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
   {% endif %}
 
   {% if code != " " %}
-    <button onclick="location.href=code" type="button", class="pub_button">Code</button>
+    <button onclick="location.href='{{pub.code}}'" type="button", class="pub_button">Code</button>
   {% endif %}
 
 
@@ -189,15 +188,14 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-  {% assign slides = {{pub.slides}} %}
-  {% assign code = {{pub.code}} %}
+
 
   {% if slides != " " %}
-    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+    <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
   {% endif %}
 
   {% if code != " " %}
-    <button onclick="location.href=code" type="button", class="pub_button">Code</button>
+    <button onclick="location.href='{{pub.code}}'" type="button", class="pub_button">Code</button>
   {% endif %}
 
 
@@ -295,15 +293,14 @@ selem.style.backgroundColor = "goldenrod";
   <button onclick="myFunction('{{pub.bib}}')" type="button", class="dropbtn">BiB</button>
   <button onclick="location.href='{{pub.arxiv_link}}'" type="button", class="pub_button">Arxiv</button>
 
-  {% assign slides = {{pub.slides}} %}
-  {% assign code = {{pub.code}} %}
+  
 
   {% if slides != " " %}
-    <button onclick="location.href='slides'" type="button", class="pub_button">Slides</button>
+    <button onclick="location.href='{{pub.slides}}'" type="button", class="pub_button">Slides</button>
   {% endif %}
 
   {% if code != " " %}
-    <button onclick="location.href='code'" type="button", class="pub_button">Code</button>
+    <button onclick="location.href='{{pub.code}}'" type="button", class="pub_button">Code</button>
   {% endif %}
 
 
