@@ -5,7 +5,7 @@
   "journal": [
 
     {
-      "title": "Stable and Memory-Efficient Image Recovery Using Monotone Operator Learning",
+      "title": "Memory-efficient model-based deep learning with convergence and robustness guarantees",
       "authors": "Aniket Pramanik, Mathews Jacob",
       "journal": "arXiv",
       "abstract": "We introduce a monotone deep equilibrium learning framework for large-scale
