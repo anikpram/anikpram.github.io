@@ -21,11 +21,13 @@
      and segmentation tasks is seen to reduce the need for segmented training datasets.
      In particular, the proposed few-shot training strategy requires only 10% of segmented
      datasets to offer good performance.",
-    "bib": "@article{pramanik2021joint, <br>
+    "bib": "@article{pramanik2023joint, <br>
       title={Joint calibrationless reconstruction and segmentation of parallel MRI}, <br>
-      author={Pramanik, Aniket and Wu, Xiaodong and Jacob, Mathews}, <br>
-      journal={arXiv preprint arXiv:2105.09220}, <br>
-      year={2021} <br>
+      author={Pramanik, Aniket and Jacob, Mathews}, <br>
+      booktitle={Computer Vision--ECCV 2022 Workshops: Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part III}, <br>
+      pages={437--453}, <br>
+      year={2023}, <br>
+      organization={Springer} <br>
       }",
     "jbox": "ECCV",
     "arxiv_link": "https://arxiv.org/abs/2105.09220",
