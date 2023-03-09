@@ -6,8 +6,8 @@
 
     {
       "title": "Memory-efficient model-based deep learning with convergence and robustness guarantees",
-      "authors": "Aniket Pramanik, Mathews Jacob",
-      "journal": "arXiv",
+      "authors": "Aniket Pramanik, M Bridget Zimmerman, Mathews Jacob",
+      "journal": "IEEE Transactions on Computational Imaging",
       "abstract": "We introduce a monotone deep equilibrium learning framework for large-scale
       inverse problems in imaging. The proposed algorithm relies on
       forward-backward splitting, where each iteration consists of a gradient descent
@@ -21,17 +21,18 @@
       algorithms cannot handle. Experiments show that the proposed scheme can offer
       improved performance in 3D settings while being stable in the presence of input
       perturbations.",
-      "bib": "@article{pramanik2022stable, <br>
-       title={Stable and memory-efficient image recovery using monotone operator learning (MOL)}, <br>
-       author={Pramanik, Aniket and Jacob, Mathews}, <br>
-       journal={arXiv preprint arXiv:2206.04797}, <br>
-       year={2022} <br>
+      "bib": "@article{pramanik2023memory, <br>
+       title={Memory-efficient model-based deep learning with convergence and robustness guarantees}, <br>
+       author={Pramanik, Aniket and Zimmerman, M Bridget and Jacob, Mathews}, <br>
+       journal={IEEE Transactions on Computational Imaging}, <br>
+       year={2023}, <br>
+       publisher={IEEE} <br>
       }",
-      "jbox": "arXiv",
+      "jbox": "TCI",
       "arxiv_link": "https://arxiv.org/abs/2206.04797",
       "slides": " ",
       "code": " ",
-      "date": "2022-12-01"
+      "date": "2023-01-01"
 
     },
 
