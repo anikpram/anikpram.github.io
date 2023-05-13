@@ -7,7 +7,7 @@
   {
     "title": "Joint Calibrationless Reconstruction and Segmentation of Parallel MRI",
     "authors": "Aniket Pramanik, Mathews Jacob",
-    "journal": "2022 ECCV Medical Computer Vision Workshop (ECCV-MCV 2022)",
+    "journal": "2022 ECCV Medical Computer Vision Workshop (ECCV-MCV)",
     "abstract": "The volume estimation of brain regions from MRI data is a key problem in many
      clinical applications, where the acquisition of data at high spatial resolution is desirable.
      While parallel MRI and constrained image reconstruction algorithms can accelerate the scans,
@@ -41,7 +41,7 @@
   {
     "title": "Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance",
     "authors": "Anitha Priya Krishnan, Roshan Reddy, Aniket Pramanik, Zhuang Song, Richard A.D. Carano" ,
-    "journal": "2022 MICCAI International Workshop on Simulation and Synthesis in Medical Imaging (SASHIMI)",
+    "journal": "2022 International Workshop on Simulation and Synthesis in Medical Imaging (SASHIMI)",
     "abstract": "Spatial resolution plays a crucial role in quantitative assessment of various
      structures in brain MRI. Super resolution (SR) as a post-processing tool holds promise for
      restoring the high frequency details lost in a low resolution (LR) acquisition with no additional
@@ -81,7 +81,7 @@
   {
     "title": "Image domain Deep-SLR for Joint Reconstruction-Segmentation of Parallel MRI",
     "authors": "Aniket Pramanik, Mathews Jacob",
-    "journal": "2021 The International Society for Magnetic Resonance in Medicine Annual Meeting (ISMRM 2021)",
+    "journal": "2021 The International Society for Magnetic Resonance in Medicine (ISMRM)",
     "abstract": "We present a novel framework for the joint reconstruction and segmentation
      of parallel MRI (PMRI) brain data. We introduce an image domain deep network for
      calibrationless recovery of undersampled PMRI data. It is deep-learning based generalization
@@ -113,7 +113,7 @@
   {
     "title": "Model based Deep Learning for Calibrationless Parallel MRI recovery",
     "authors": "Aniket Pramanik, Hemant Aggarwal, Mathews Jacob",
-    "journal": "2020 The International Society for Magnetic Resonance in Medicine Annual Meeting (ISMRM 2020)",
+    "journal": "2020 The International Society for Magnetic Resonance in Medicine (ISMRM)",
     "abstract": "We introduce a fast model based deep learning approach for calibrationless parallel
      MRI reconstruction. The proposed scheme is a non-linear generalization of structured low-rank (SLR)
      methods that self learn linear annihilation filters. It pre-learns non-linear annihilation relations
