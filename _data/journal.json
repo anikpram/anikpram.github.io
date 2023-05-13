@@ -128,16 +128,18 @@
       "authors": "Hemant Aggarwal, Aniket Pramanik, Mathews Jacob",
       "journal": "IEEE Transactions on Medical Imaging",
       "abstract": "Image reconstruction using deep learning algorithms offers improved reconstruction quality and lower
-      reconstruction time than classical compressed sensing and model-based algorithms. Unfortunately, clean and
-      fully sampled ground-truth data to train the deep networks is often not available in several applications,
-      restricting the applicability of the above methods. This work introduces the ENsemble Stein's Unbiased Risk
-      Estimate (ENSURE) framework as a general approach to train deep image reconstruction algorithms without fully
-      sampled and noise-free images. The proposed framework is the generalization of the classical SURE and GSURE
-      formulation to the setting where the images are sampled by different measurement operators, chosen randomly
-      from a set. We show that the ENSURE loss function, which only uses the measurement data, is an unbiased
-      estimate for the true mean-square error. Our experiments show that the networks trained with this loss
-      function can offer reconstructions comparable to the supervised setting. While we demonstrate this framework
-      in the context of MR image recovery, the ENSURE framework is generally applicable to arbitrary inverse problems." ,
+       reconstruction time than classical compressed sensing and model-based algorithms. Unfortunately, clean and fully
+       sampled ground-truth data to train the deep networks is often unavailable in several applications, restricting
+       the applicability of the above methods. We introduce a novel metric termed the ENsemble Stein’s Unbiased
+       Risk Estimate (ENSURE) framework, which can be used to train deep image reconstruction algorithms without
+       fully sampled and noisefree images. The proposed framework is the generalization of the classical SURE and GSURE
+       formulation to the setting here the images are sampled by different measurement operators, chosen randomly
+       from a set. We evaluate the expectation of the GSURE loss functions over the sampling patterns to obtain the
+       ENSURE loss function. We show that this loss is an unbiased estimate for the true mean-square error,
+       which offers a better alternative to GSURE, which only offers an unbiased estimate for the projected error.
+       Our experiments show that the networks trained with this loss function can offer reconstructions comparable
+       to the supervised setting. While we demonstrate this framework in the context of MR image recovery,
+       the ENSURE framework is generally applicable to arbitrary inverse problems." ,
       "bib": "@article{aggarwal2022ensure, <br>
        title={ENSURE: A general approach for unsupervised training of deep image reconstruction algorithms}, <br>
        author={Aggarwal, Hemant Kumar and Pramanik, Aniket and John, Maneesh and Jacob, Mathews}, <br>
