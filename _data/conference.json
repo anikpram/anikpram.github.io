@@ -4,6 +4,38 @@
 
 "conference": [
 
+
+  {
+    "title": "Accelerated parallel MRI using memory efficient and robust monotone operator learning (MOL)",
+    "authors": "Aniket Pramanik, Mathews Jacob",
+    "journal": "2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI 2023)",
+    "abstract": "Model-based deep learning methods that combine imaging
+    physics with learned regularization priors have been emerging as powerful tools
+    for parallel MRI acceleration. The main focus of this paper is to determine the utility of the
+    monotone operator learning (MOL) framework in the parallel MRI setting.
+    The MOL algorithm alternates between a gradient descent step using a monotone
+    convolutional neural network (CNN) and a conjugate gradient algorithm to encourage
+    data consistency. The benefits of this approach include similar guarantees as
+    compressive sensing algorithms including uniqueness, convergence, and stability, while being
+    significantly more memory efficient than unrolled methods. We validate the proposed scheme
+    by comparing it with different unrolled algorithms in the context of accelerated parallel
+    MRI for static and dynamic settings." ,
+    "bib": "@article{pramanik2023accelerated, <br>
+      title={Accelerated parallel MRI using memory efficient and robust monotone operator learning (MOL)}, <br>
+      author={Pramanik, Aniket and Jacob, Mathews}, <br>
+      journal={arXiv preprint arXiv:2304.01351}, <br>
+      year={2023} <br>
+      }",
+    "jbox": "ISBI",
+    "arxiv_link": "https://arxiv.org/abs/2304.01351",
+    "slides": " ",
+    "code": "https://github.com/anikpram/Monotone-Operator-Learning",
+    "date": "2023-04-01"
+
+  },
+
+
+
   {
     "title": "Off-the-grid model based deep learning (O-MoDL)",
     "authors": "Aniket Pramanik, Hemant Aggarwal, Mathews Jacob",
@@ -58,7 +90,7 @@
     "jbox": "ISBI",
     "arxiv_link": "https://arxiv.org/abs/1911.12443",
     "slides": " ",
-    "code": " ",
+    "code": "https://github.com/anikpram/Deep-SLR",
     "date": "2020-04-01"
 
   },
@@ -126,7 +158,7 @@
     "jbox": "ISBI",
     "arxiv_link": "https://arxiv.org/abs/2111.11380",
     "slides": " ",
-    "code": " ",
+    "code": "https://github.com/anikpram/Monotone-Operator-Learning",
     "date": "2022-04-01"
 
   }

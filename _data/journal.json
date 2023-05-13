@@ -4,6 +4,45 @@
 
   "journal": [
 
+
+    {
+      "title": "Adapting model-based deep learning to multiple acquisition conditions: Ada-MoDL",
+      "authors": "Aniket Pramanik, Sampada Bhave, Saurav Sajib, Samir D Sharma, Mathews Jacob",
+      "journal": "Magnetic Resonance in Medicine",
+      "abstract": "Purpose: The aim of this work is to introduce a single model-based deep network that
+      can provide highquality reconstructions from undersampled parallel MRI data acquired with multiple sequences,
+      acquisition settings and field strengths. <br><br>
+
+      Methods: A single unrolled architecture, which offers good reconstructions for multiple acquisition settings,
+      is introduced. The proposed scheme adapts the model to each setting by scaling the CNN features and the
+      regularization parameter with appropriate weights. The scaling weights and regularization parameter are
+      derived using a multi-layer perceptron model from conditional vectors, which represents the specific acquisition setting. The perceptron parameters and the CNN weights are jointly trained using data from multiple
+      acquisition settings, including differences in field strengths, acceleration, and contrasts. The conditional
+      network is validated using datasets acquired with different acquisition settings. <br><br>
+
+      Results: The comparison of the adaptive framework, which trains a single model using the data from all
+      the settings, shows that it can offer consistently improved performance for each acquisition condition. The
+      comparison of the proposed scheme with networks that are trained independently for each acquisition setting
+      shows that it requires less training data per acquisition setting to offer good performance. <br><br>
+
+      Conclusion: The Ada-MoDL framework enables the use of a single model-based unrolled network for
+      multiple acquisition settings. In addition to eliminating the need to train and store multiple networks for
+      different acquisition settings, this approach reduces the training data needed for each acquisition setting.",
+      "bib": "@article{pramanik2023adapting, <br>
+      title={Adapting model-based deep learning to multiple acquisition conditions: Ada-MoDL}, <br>
+      author={Pramanik, Aniket and Bhave, Sampada and Sajib, Saurav and Sharma, Samir D and Jacob, Mathews}, <br>
+      journal={arXiv preprint arXiv:2304.11238}, <br>
+      year={2023} <br>
+      }",
+      "jbox": "MRM",
+      "arxiv_link": "https://arxiv.org/abs/2304.11238",
+      "slides": " ",
+      "code": " ",
+      "date": "2023-05-01"
+
+    },
+
+
     {
       "title": "Memory-efficient model-based deep learning with convergence and robustness guarantees",
       "authors": "Aniket Pramanik, M Bridget Zimmerman, Mathews Jacob",
