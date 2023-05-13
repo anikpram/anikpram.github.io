@@ -41,7 +41,7 @@
   {
     "title": "Multimodal Super Resolution with Dual Domain Loss and Gradient Guidance",
     "authors": "Anitha Priya Krishnan, Roshan Reddy, Aniket Pramanik, Zhuang Song, Richard A.D. Carano" ,
-    "journal": "2022 MICCAI International Workshop on Simulation and Synthesis in Medical Imaging (SASHIMI 2022)",
+    "journal": "2022 MICCAI International Workshop on Simulation and Synthesis in Medical Imaging (SASHIMI)",
     "abstract": "Spatial resolution plays a crucial role in quantitative assessment of various
      structures in brain MRI. Super resolution (SR) as a post-processing tool holds promise for
      restoring the high frequency details lost in a low resolution (LR) acquisition with no additional
