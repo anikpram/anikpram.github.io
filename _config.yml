@@ -11,6 +11,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-scholar
 
 collections:
   posts:
