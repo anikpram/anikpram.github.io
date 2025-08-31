@@ -3,7 +3,7 @@ title: "Aniket Pramanik"
 url: "https://anikpram.github.io"   # <-- use your actual GitHub username here
 baseurl: ""
 
-remote_theme: alshedivat/al-folio@v0.4.3
+remote_theme: alshedivat/al-folio@v0.14.6
 
 plugins:
   - jekyll-feed
