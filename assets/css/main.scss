@@ -1,0 +1,8 @@
+/* Define a real value so Sass never sees an empty assignment */
+$max-content-width: 1200px;
+
+/* Optional: your site-level tweaks; safe no-op */
+:root { --_noop: 1; }
+
+/* If you want your custom overrides, keep _sass/_custom.scss and import it: */
+@import "custom";

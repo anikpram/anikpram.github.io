@@ -20,6 +20,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug – branch & HEAD
+        run: |
+          echo "BRANCH: $(git rev-parse --abbrev-ref HEAD)"
+          echo "SHA: $(git rev-parse --short HEAD)"
+
+      - name: Debug – find any main.scss and show first lines
+        run: |
+          echo "== searching for main.scss =="
+          find . -type f -iname "main.scss" -print -exec sed -n '1,20p' {} \; || true
+          echo "== grep for '$max-content-width:' =="
+          grep -R --line-number --color=never '\$max-content-width:' . || echo "no matches"
+
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
