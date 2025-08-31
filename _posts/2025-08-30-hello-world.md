@@ -1,10 +1,4 @@
 ---
-
-
-# _posts/2025-08-30-hello-world.md
-
-
----
 layout: post
 title: "Hello, World"
 summary: "First post on the new al‑folio site."
