@@ -1,4 +1,74 @@
 ---
+
+
+# _config.yml
+
+
+lang: en
+url: "https://aniketpramanik.github.io"
+baseurl: ""
+
+
+title: "Aniket Pramanik"
+subtitle: "Computational Imaging • AI/ML"
+description: "Postdoc at MSK — MRI‑guided radiotherapy, computational MRI/CT, and AI/ML."
+logo: /assets/img/avatar.jpg
+
+
+author:
+name: "Aniket Pramanik"
+email: ""
+avatar: /assets/img/avatar.jpg
+github: aniketpramanik
+scholar: ""
+orcid: ""
+linkedin: ""
+twitter: ""
+
+
+remote_theme: alshedivat/al-folio@v0.4.3
+
+
+skin: default
+navbar_fixed: true
+footer_fixed: false
+
+
+markdown: kramdown
+kramdown:
+input: GFM
+math_engine: mathjax
+syntax_highlighter: rouge
+mathjax_autoNumber: true
+
+
+collections:
+posts:
+output: true
+permalink: /blog/:title/
+permalink: pretty
+
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-paginate
+- jekyll-archives
+- jekyll-scholar
+- jekyll-remote-theme
+
+
+seo:
+type: Person
+
+
+scholar:
+style: apa
 locale: en
 source: _bibliography
 bibliography: papers.bib
