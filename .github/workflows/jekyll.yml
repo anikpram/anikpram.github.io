@@ -2,7 +2,7 @@ name: Build and Deploy (al-folio)
 
 on:
   push:
-    branches: ["main"]
+    branches: ["alfolio"]
   workflow_dispatch:
 
 permissions:
