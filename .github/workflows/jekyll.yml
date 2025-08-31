@@ -15,14 +15,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
+
       - name: Build site
         run: |
           bundle install
           JEKYLL_ENV=production bundle exec jekyll build --trace
+
+      # Required by Pages (sets base path, etc.)
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Upload the built _site as the artifact for Pages to deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -30,10 +38,11 @@ jobs:
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
