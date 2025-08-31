@@ -1,10 +1,4 @@
 ---
-
-
-# _pages/index.md
-
-
----
 layout: page
 title: "About"
 permalink: "/"
