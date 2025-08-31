@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
   gem "jekyll-scholar"
+  gem "jekyll-toc"
   # If/when you want BibTeX pubs via Actions:
   # gem "jekyll-scholar"
 end

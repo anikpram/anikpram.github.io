@@ -12,6 +12,7 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
   - jekyll-scholar
+  - jekyll-toc
 
 collections:
   posts:
