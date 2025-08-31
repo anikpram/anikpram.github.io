@@ -1,9 +1,3 @@
----
-
-
-# _config.yml
-
-
 lang: en
 url: "https://aniketpramanik.github.io"
 baseurl: ""
@@ -114,4 +108,3 @@ exclude:
 - README.md
 
 
----
