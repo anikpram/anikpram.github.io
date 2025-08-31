@@ -1,0 +1,47 @@
+---
+locale: en
+source: _bibliography
+bibliography: papers.bib
+bibliography_template: bib_item
+sort_by: year, month
+order: descending
+query: "@*"
+
+
+nav:
+- title: About
+url: /
+- title: Publications
+url: /publications/
+- title: Projects
+url: /projects/
+- title: Blog
+url: /blog/
+
+
+defaults:
+- scope:
+path: "_pages"
+values:
+layout: page
+- scope:
+path: "_posts"
+type: posts
+values:
+layout: post
+math: true
+
+
+assets:
+images_dir: assets/img
+
+
+exclude:
+- node_modules
+- vendor
+- Gemfile.lock
+- .github
+- README.md
+
+
+---

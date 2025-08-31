@@ -1,0 +1,15 @@
+---
+
+
+# _includes/bib_item.html
+
+
+<li class="pub-item">
+{{ reference }}
+{% if entry.url %} <a href="{{ entry.url }}">[link]</a>{% endif %}
+{% if entry.doi %} <a href="https://doi.org/{{ entry.doi }}">[doi]</a>{% endif %}
+{% if entry.eprint and entry.archivePrefix == 'arXiv' %} <a href="https://arxiv.org/abs/{{ entry.eprint }}">[arXiv]</a>{% endif %}
+</li>
+
+
+---

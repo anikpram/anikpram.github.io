@@ -1,0 +1,20 @@
+---
+
+
+# _data/projects.yml
+
+
+- title: Fast DL-based Iterative Reconstruction for Industrial CBCT
+description: Real-time, scalable, and robust iterative reconstruction using learned priors.
+tags: [MRI/CT, Reconstruction, Deep Learning]
+github: https://github.com/aniketpramanik/your-repo
+image: /assets/img/projects/cbct.png
+
+
+- title: MR-LINAC Tumor Tracking
+description: Motion modeling and beam alignment for MRI-guided radiotherapy.
+tags: [Radiotherapy, Tracking, AI]
+image: /assets/img/projects/mrlinac.png
+
+
+---

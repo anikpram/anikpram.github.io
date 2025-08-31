@@ -1,0 +1,23 @@
+---
+
+
+# _sass/_custom.scss
+
+
+:root {
+--accent: #3b82f6;
+}
+
+
+.navbar-brand { font-weight: 700; }
+.project-card {
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+padding: 16px;
+margin-bottom: 16px;
+}
+.project-card img { max-width: 100%; border-radius: 10px; }
+.tags { opacity: 0.7; font-size: 0.9rem; }
+
+
+---
