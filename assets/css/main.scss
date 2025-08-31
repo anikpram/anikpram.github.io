@@ -1,0 +1,7 @@
+---
+---
+
+$max-content-width: 1200px !default;  // pick your width
+
+@import "al-folio";   // load theme SCSS (uses the variable above)
+@import "custom";     // your overrides in _sass/_custom.scss
