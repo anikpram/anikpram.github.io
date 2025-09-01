@@ -9,7 +9,7 @@ math: true
 ---
 
 
-This is a minimal first post. Inline math works, e.g., $x^\top x$.
+This is a minimal first post. Inline math works, e.g., $x^2$.
 
 
 ```python
