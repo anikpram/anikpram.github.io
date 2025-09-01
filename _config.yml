@@ -34,6 +34,12 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+# Enable MathJax
+enable_math: true
+
+# Or for al-folio specifically:
+math: true
+
 max_width: 930px
 
 
