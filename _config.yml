@@ -4,8 +4,7 @@ url: "https://anikpram.github.io"   # <-- use your actual GitHub username here
 baseurl: ""
 
 remote_theme: alshedivat/al-folio@v0.14.6
-#remote_theme: jekyll/minima
-#remote_theme: alshedivat/al-folio@master
+
 
 plugins:
   - jekyll-feed
@@ -21,6 +20,10 @@ collections:
     output: true
     permalink: /blog/:title/
 
+  pages:
+    output: true
+    permalink: /:path/
+
 paginate: 0
 paginate_path: "/blog/page:num/"
 permalink: pretty
@@ -31,4 +34,4 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-max_width: 1200px
+max_width: 930px
