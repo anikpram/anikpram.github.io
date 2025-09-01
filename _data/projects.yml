@@ -4,7 +4,7 @@
     - MRI/CT
     - Reconstruction
     - Deep Learning
-  github: https://github.com/anikpram/your-repo
+  github: https://github.com/anikpram/Deep-SLR
   image: /assets/img/projects/cbct.png
 
 - title: MR-LINAC Tumor Tracking
@@ -13,5 +13,5 @@
     - Radiotherapy
     - Tracking
     - AI
-  github:
+  github: https://github.com/anikpram/Deep-SLR
   image: /assets/img/projects/mrlinac.png

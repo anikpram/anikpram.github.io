@@ -1,6 +1,3 @@
-# _pages/projects.md
-
-
 ---
 layout: page
 title: Projects
@@ -11,7 +8,7 @@ permalink: /projects/
 <div class="projects">
 {% for p in site.data.projects %}
 <div class="project-card">
-<img src="{{ p.image | default: '/assets/img/project-placeholder.jpg' }}" alt="{{ p.title }}">
+<img src="{{ p.image }}" alt="{{ p.title }}">
 <h3>{{ p.title }}</h3>
 <p>{{ p.description }}</p>
 <p class="links">
@@ -23,5 +20,3 @@ permalink: /projects/
 {% endfor %}
 </div>
 
-
----
