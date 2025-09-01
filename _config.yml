@@ -42,3 +42,10 @@ scholar:
   bibliography: papers.bib
   style: apa           # or ieee, acm, etc. (optional)
   locale: en
+
+
+  defaults:
+  - scope:
+      path: ""
+    values:
+      navigation: _data/navigation.yml
