@@ -9,7 +9,16 @@ math: true
 ---
 
 
-This is a minimal first post. Inline math works, e.g., $x + 2$.
+
+
+Inline test: \( a^2 + b^2 = c^2 \).
+
+Block test:
+
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+
 
 
 ```python
