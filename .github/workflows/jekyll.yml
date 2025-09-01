@@ -20,19 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Debug – branch & HEAD
-        run: |
-          echo "BRANCH: $(git rev-parse --abbrev-ref HEAD)"
-          echo "SHA: $(git rev-parse --short HEAD)"
-
-      - name: Debug – find any main.scss and show first lines
-        run: |
-          echo "== searching for main.scss =="
-          find . -type f -iname "main.scss" -print -exec sed -n '1,20p' {} \; || true
-          echo "== grep for '$max-content-width:' =="
-          grep -R --line-number --color=never '\$max-content-width:' . || echo "no matches"
-
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
@@ -46,16 +33,6 @@ jobs:
         run: |
           bundle install
           JEKYLL_ENV=production bundle exec jekyll build --trace
-
-      # Debug: list the built site
-      - name: List build output
-        run: |
-          echo "== PWD =="
-          pwd
-          echo "== ls -la =="
-          ls -la
-          echo "== ls -la _site =="
-          ls -la _site || (echo "_site missing!" && exit 1)
 
       # Upload _site as the artifact for Pages
       - name: Upload artifact

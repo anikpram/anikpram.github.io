@@ -19,7 +19,7 @@ collections:
     output: true
     permalink: /blog/:title/
 
-paginate: 10
+paginate: 0
 paginate_path: "/blog/page:num/"
 permalink: pretty
 
@@ -29,4 +29,4 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-paginate: 0
+
