@@ -5,7 +5,7 @@ baseurl: ""
 
 #remote_theme: alshedivat/al-folio@v0.14.6
 #remote_theme: jekyll/minima
-remote_theme: alshedivat/al-folio@master
+#remote_theme: alshedivat/al-folio@master
 
 plugins:
   - jekyll-feed
@@ -13,7 +13,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-remote-theme
-  #- jekyll-scholar
+  - jekyll-scholar
   - jekyll-toc
 
 collections:
