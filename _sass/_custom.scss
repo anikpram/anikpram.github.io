@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Custom overrides for al-folio theme
+   ==========================================================================
+   This file lets you customize colors, typography, spacing, and components.
+   It is loaded after the theme’s SCSS, so your changes will override defaults.
+   ========================================================================== */
+
+/* Accent color (links, highlights, buttons) */
+:root {
+    --accent: #3b82f6; // Tailwind blue-500, change to your brand color
+  }
+  
+  /* Navbar brand/logo text */
+  .navbar-brand {
+    font-weight: 700;
+  }
+  
+  /* Project cards */
+  .project-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Tag styling */
+  .tags {
+    opacity: 0.7;
+    font-size: 0.9rem;
+  }
+  
+  /* Example: adjust global font size */
+  body {
+    font-size: 1rem; // default ~16px
+    line-height: 1.6;
+  }
+  
+  /* Example: custom footer */
+  footer {
+    font-size: 0.85rem;
+    color: #6b7280; // Tailwind gray-500
+  }
+  
+  /* Example: override headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #111827; // Tailwind gray-900
+  }
+  
