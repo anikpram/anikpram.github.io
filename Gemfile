@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
+gem "jekyll", "~> 4.4.0"
 
 group :jekyll_plugins do
   gem "jekyll-remote-theme"
@@ -14,3 +14,5 @@ group :jekyll_plugins do
   # If/when you want BibTeX pubs via Actions:
   # gem "jekyll-scholar"
 end
+
+
