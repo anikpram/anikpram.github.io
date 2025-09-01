@@ -1,6 +1,3 @@
-# _pages/publications.md
-
-
 ---
 layout: page
 title: Publications
@@ -12,5 +9,3 @@ permalink: /publications/
 {% bibliography %}
 </ul>
 
-
----
