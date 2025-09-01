@@ -44,8 +44,3 @@ scholar:
   locale: en
 
 
-  defaults:
-  - scope:
-      path: ""
-    values:
-      navigation: _data/navigation.yml
