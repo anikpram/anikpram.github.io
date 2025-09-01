@@ -35,3 +35,10 @@ kramdown:
   syntax_highlighter: rouge
 
 max_width: 930px
+
+
+scholar:
+  source: _bibliography
+  bibliography: papers.bib
+  style: apa           # or ieee, acm, etc. (optional)
+  locale: en
