@@ -46,6 +46,7 @@ scholar:
 # Theme settings
 navbar_fixed: true
 footer_fixed: true
+show_navbar: true 
 show_social_icons: true
 enable_darkmode: true
 enable_google_analytics: false # set to true and add your GA ID
