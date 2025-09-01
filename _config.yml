@@ -28,14 +28,14 @@ paginate: 0
 paginate_path: "/blog/page:num/"
 permalink: pretty
 
+
+# Enable MathJax
+enable_math: true
+
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
-  
-
-# Enable MathJax
-enable_math: true
 
 
 max_width: 930px
