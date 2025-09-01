@@ -4,6 +4,7 @@ title: "Hello, World"
 summary: "First post on the new al‑folio site."
 categories: [notes]
 tags: [intro]
+math: true
 ---
 
 
