@@ -3,7 +3,7 @@ title: "Aniket Pramanik"
 url: "https://anikpram.github.io"   # <-- use your actual GitHub username here
 baseurl: ""
 
-#remote_theme: alshedivat/al-folio@v0.14.6
+remote_theme: alshedivat/al-folio@v0.14.6
 #remote_theme: jekyll/minima
 #remote_theme: alshedivat/al-folio@master
 
@@ -31,4 +31,4 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-
+max_width: 1200px
