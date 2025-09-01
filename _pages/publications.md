@@ -6,6 +6,6 @@ permalink: /publications/
 
 
 <ul class="bibliography">
-{% site.bibliography %}
+{% bibliography %}
 </ul>
 
