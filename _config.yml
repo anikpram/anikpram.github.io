@@ -46,6 +46,8 @@ scholar:
   bibliography: papers.bib
   style: apa           # or ieee, acm, etc. (optional)
   locale: en
+  last_name: "Pramanik"
+  first_name: "Aniket"
 
 # Theme settings
 navbar_fixed: true
