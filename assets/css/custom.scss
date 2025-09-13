@@ -1,0 +1,15 @@
+/* Override al-folio theme accent color */
+$link-color: goldenrod;
+$navbar-default-link-color: goldenrod;
+$navbar-default-link-hover-color: darkgoldenrod;
+$navbar-default-brand-color: goldenrod;
+
+a,
+a:visited {
+  color: $link-color;
+}
+
+a:hover,
+.navbar-nav > li > a:hover {
+  color: $navbar-default-link-hover-color;
+}
