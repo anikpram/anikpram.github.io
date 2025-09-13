@@ -23,8 +23,8 @@ I obtained my PhD from the Department of Electrical and Computer Engineering at 
 I believe recreational activities supplement creative thinking and productivity. Such reasons have inspired me to explore running, singing and bachata dancing as hobbies. I occasionally sing and archive videos of those on my [Youtube channel](https://www.youtube.com/channel/UCzmMsEKVY0YeF3VVXwPjPZA/featured). Running energizes my mind and body for the long haul and it also helps me stay fit. As a matter of fact, I have finished a [25 km (16 miles)](https://www.athlinks.com/event/70981/results/Event/1017125/Course/2242829/Bib/253?source=internal) train run and a [half marathon](https://www.athlinks.com/event/20422/results/Event/1077835/Course/2465425/Bib/2432) at the Knoxville Marathon 2024.
 
 
-
+<!-->
 ### News
 - 2025‑08: Website launched 🎉
-
+-->
 
