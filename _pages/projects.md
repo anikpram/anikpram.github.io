@@ -7,6 +7,10 @@ nav_order: 2
 ---
 
 
+
+under construction
+
+<!--
 <div class="projects">
 {% for p in site.data.projects %}
 <div class="project-card">
@@ -21,4 +25,4 @@ nav_order: 2
 </div>
 {% endfor %}
 </div>
-
+-->
