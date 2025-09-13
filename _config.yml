@@ -48,6 +48,8 @@ scholar:
   locale: en
   last_name: "Pramanik"
   first_name: "Aniket"
+  sort_by: year
+  order: descending   # newest first
 
 # Theme settings
 navbar_fixed: true
