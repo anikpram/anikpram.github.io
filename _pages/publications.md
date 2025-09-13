@@ -8,6 +8,6 @@ nav_order: 1
 
 
 <ul class="bibliography">
-{% bibliography | replace: "Pramanik, A.", "<b>Pramanik, A.</b>" %}
+{% bibliography | replace: "Pramanik, Aniket", "<b>Pramanik, Aniket</b>" %}
 </ul>
 
