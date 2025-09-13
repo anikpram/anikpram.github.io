@@ -56,6 +56,3 @@ enable_darkmode: true
 enable_google_analytics: false # set to true and add your GA ID
 
 
-author:
-  name: "Aniket Pramanik"
-  avatar: "/assets/img/index/headshot.png"   # path to your image
