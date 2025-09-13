@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Publications"
+title: "Scholarly Works"
 permalink: /publications/
 nav: true
 nav_order: 1
@@ -8,6 +8,6 @@ nav_order: 1
 
 
 <ul class="bibliography">
-{% bibliography | replace: "Aniket Pramanik", "<b>Aniket Pramanik</b>" %}
+{% bibliography | replace: "Pramanik, A.", "<b>Pramanik, A.</b>" %}
 </ul>
 

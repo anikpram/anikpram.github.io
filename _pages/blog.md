@@ -6,7 +6,9 @@ nav: true
 nav_order: 3
 ---
 
+under construction
 
+<!--
 {% if paginator and paginator.posts %}
 <ul>
 {% for post in paginator.posts %}
@@ -26,5 +28,5 @@ nav_order: 3
 {% endfor %}
 </ul>
 {% endif %}
-
+-->
 
