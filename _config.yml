@@ -15,7 +15,7 @@ plugins:
   - jekyll-scholar
   - jekyll-toc
   - jekyll-github-metadata
-  - jekyll-katex
+  #- jekyll-katex
 
 collections:
   posts:
