@@ -32,7 +32,7 @@ permalink: pretty
 
 
 # Enable MathJax
-#enable_math: true
+enable_math: true
 
 #markdown: kramdown
 #kramdown:
