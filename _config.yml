@@ -15,7 +15,7 @@ plugins:
   - jekyll-scholar
   - jekyll-toc
   - jekyll-github-metadata
-  - kramdown-math-katex
+  - jekyll-katex
   
 
 collections:
@@ -32,27 +32,7 @@ paginate_path: "/blog/page:num/"
 permalink: pretty
 
 
-# Enable MathJax
-#enable_math: true
 
-#markdown: kramdown
-#kramdown:
-#  input: GFM
-#  math_engine: mathjax
-
-
-
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: katex
-  math_engine_opts:
-    delimiters:
-      inline: [["$", "$"], ["\\(", "\\)"]]
-      block:  [["$$", "$$"], ["\\[", "\\]"]]
-
-# Enable math globally (optional)
-#math: true
 
 
 
@@ -99,3 +79,18 @@ repo_trophies:
   enabled: true
   theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
+
+
+
+
+
+
+
+
+
+katex:
+  js_path: "assets"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: false      # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"  # errorColor

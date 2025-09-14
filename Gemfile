@@ -11,7 +11,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-scholar"
   gem "jekyll-toc"
-  gem "kramdown-math-katex"
+  gem "jekyll-katex"
   #gem "jekyll-minima"
   # If/when you want BibTeX pubs via Actions:
   # gem "jekyll-scholar"
