@@ -15,7 +15,7 @@ plugins:
   - jekyll-scholar
   - jekyll-toc
   - jekyll-github-metadata
-  #- jekyll-katex
+  
 
 collections:
   posts:
@@ -32,19 +32,21 @@ permalink: pretty
 
 
 # Enable MathJax
-enable_math: true
+#enable_math: true
 
 #markdown: kramdown
 #kramdown:
 #  input: GFM
 #  math_engine: mathjax
 
-#kramdown:
-#  math_engine: katex
-
 markdown: kramdown
 kramdown:
   input: GFM
+
+# Enable math globally (optional)
+math: true
+
+
 
 max_width: 930px
 
