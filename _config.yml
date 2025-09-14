@@ -15,6 +15,7 @@ plugins:
   - jekyll-scholar
   - jekyll-toc
   - jekyll-github-metadata
+  - kramdown-math-katex
   
 
 collections:
@@ -42,6 +43,7 @@ permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
+  math_engine: katex
 
 # Enable math globally (optional)
 #math: true
