@@ -39,6 +39,9 @@ permalink: pretty
 #  input: GFM
 #  math_engine: mathjax
 
+kramdown:
+  math_engine: katex
+
 
 max_width: 930px
 
