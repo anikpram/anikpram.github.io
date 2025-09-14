@@ -8,7 +8,7 @@ nav_order: 3
 
 under construction
 
-
+<!--
 {% if paginator and paginator.posts %}
 <ul>
 {% for post in paginator.posts %}
@@ -28,5 +28,5 @@ under construction
 {% endfor %}
 </ul>
 {% endif %}
-
+-->
 
