@@ -65,6 +65,6 @@ repository: anikpram/anikpram.github.io
 github: 
   username: anikpram
 
-plugins:
-  - jekyll-github-metadata
+#plugins:
+#  - jekyll-github-metadata
   # (keep your other plugins)
