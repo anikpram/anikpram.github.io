@@ -1,7 +1,7 @@
 ---
 layout: page
+title: Repositories
 permalink: /repositories/
-title: repositories
 nav: true
 nav_order: 4
 ---
@@ -17,6 +17,7 @@ nav_order: 4
 
 ---
 
+
 {% if site.repo_trophies.enabled %}
 {% for user in site.data.repositories.github_users %}
   {% if site.data.repositories.github_users.size > 1 %}
@@ -31,6 +32,7 @@ nav_order: 4
 {% endfor %}
 {% endif %}
 {% endif %}
+
 
 ## GitHub Repositories
 

@@ -62,14 +62,23 @@ enable_google_analytics: false # set to true and add your GA ID
 
 
 # replace with your actual repo slug and username
-repository: anikpram/anikpram.github.io
-github: 
-  username: anikpram
-  sort_by: stars
-  limit: 12
+#repository: anikpram/anikpram.github.io
+#github: 
+#  username: anikpram
+#  sort_by: stars
+#  limit: 12
 
 
 
 #plugins:
 #  - jekyll-github-metadata
   # (keep your other plugins)
+
+
+  # repo color theme
+repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_trophies:
+  enabled: true
+  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
