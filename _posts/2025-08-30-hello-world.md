@@ -11,14 +11,14 @@ tags: [intro]
 
 
 
-Inline test: $ a^2 + b^2 = c^2 $.
+Inline test: {% katexmm %}$ a^2 + b^2 = c^2 ${% endkatexmm %}.
 
 Block test:
-
+{% katexmm %}
 $$
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
-
+{% endkatexmm %}
 
 
 ```python
