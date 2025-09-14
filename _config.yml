@@ -40,10 +40,16 @@ permalink: pretty
 #  input: GFM
 #  math_engine: mathjax
 
+
+
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: katex
+  math_engine_opts:
+    delimiters:
+      inline: [["$", "$"], ["\\(", "\\)"]]
+      block:  [["$$", "$$"], ["\\[", "\\]"]]
 
 # Enable math globally (optional)
 #math: true
