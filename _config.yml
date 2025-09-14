@@ -60,3 +60,11 @@ enable_darkmode: true
 enable_google_analytics: false # set to true and add your GA ID
 
 
+# replace with your actual repo slug and username
+repository: anikpram/anikpram.github.io
+github: 
+  username: anikpram
+
+plugins:
+  - jekyll-github-metadata
+  # (keep your other plugins)
