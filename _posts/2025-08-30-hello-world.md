@@ -5,13 +5,13 @@ date: 2025-08-30
 summary: First post on the new al‑folio site.
 categories: [notes]
 tags: [intro]
-math: true
+#math: true
 ---
 
 
 
 
-Inline test: \( a^2 + b^2 = c^2 \).
+Inline test: $ a^2 + b^2 = c^2 $.
 
 Block test:
 
