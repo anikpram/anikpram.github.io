@@ -62,11 +62,11 @@ enable_google_analytics: false # set to true and add your GA ID
 
 
 # replace with your actual repo slug and username
-repository: anikpram/anikpram.github.io
-github: 
-  username: anikpram
-  sort_by: stars
-  limit: 12
+#repository: anikpram/anikpram.github.io
+#github: 
+#  username: anikpram
+#  sort_by: stars
+#  limit: 12
 
 
 
