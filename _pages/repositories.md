@@ -6,7 +6,7 @@ nav: true
 nav_order: 4   # adjust as you like
 ---
 
-
+<!--
 {% assign repos = site.github.public_repositories 
   | where_exp: "r", "r.fork == false" 
   | sort: "stargazers_count" 
@@ -25,10 +25,10 @@ nav_order: 4   # adjust as you like
   </li>
 {% endfor %}
 </ul>
+-->
 
 
 
-<!--
 ## GitHub users
 <ul>
 {% for u in site.data.github_users.users %}
@@ -65,4 +65,3 @@ and comment out the “featured list” block. Requires jekyll-github-metadata +
   {%- endfor -%}
   </ul>
 {%- endif -%}
--->
