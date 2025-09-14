@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: repositories
 title: "Repositories"
 permalink: /repositories/
 nav: true
@@ -28,7 +28,7 @@ nav_order: 4   # adjust as you like
 -->
 
 
-
+<!--
 ## GitHub users
 <ul>
 {% for u in site.data.github_users.users %}
@@ -65,3 +65,4 @@ and comment out the “featured list” block. Requires jekyll-github-metadata +
   {%- endfor -%}
   </ul>
 {%- endif -%}
+-->
