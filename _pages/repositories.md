@@ -3,7 +3,7 @@ layout: page
 title: "Repositories"
 permalink: /repositories/
 nav: true
-nav_order: 3   # adjust as you like
+nav_order: 4   # adjust as you like
 ---
 
 {% assign repos = site.github.public_repositories 
