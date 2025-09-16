@@ -164,6 +164,7 @@ hr{
   border: none;
   cursor: pointer;
   margin-left: auto;
+  font-size: 14px;
 }
 
 .mode_button .fa{
@@ -173,6 +174,11 @@ hr{
   background-color: black;
 }
 
+.moon-icon {
+    font-size: 20px;   /* smaller icon (default ~24px) */
+    text-align: center;
+    cursor: pointer;
+  }
 
 h1 {
     font-family: 'Roboto', sans-serif;
