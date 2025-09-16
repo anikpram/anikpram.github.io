@@ -162,6 +162,7 @@ hr{
   text-align: right;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .mode_button .fa{
@@ -216,7 +217,7 @@ h2 {
 
 .navbar{
   width: 100%;
-  height: 15%;
+  height: 10%;
   background-color: black;
   position: fixed;
   top: 0;
