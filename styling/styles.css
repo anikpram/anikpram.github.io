@@ -230,6 +230,9 @@ h2 {
   top: 0;
   z-index: 2;
   display: flex;
+  align-items: center;
+  justify-content: center;   /* center the nav-center block */
+  position: relative; 
 }
 
 
