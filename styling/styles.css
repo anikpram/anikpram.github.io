@@ -154,7 +154,7 @@ hr{
 
 
 .mode_button{
-  display: block;
+  justify-self: end;
   background-color: black;
   padding-top: 0.5em;
   padding-right: 0;
