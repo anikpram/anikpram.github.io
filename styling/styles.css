@@ -156,7 +156,7 @@ hr{
 .mode_button{
   justify-self: end;
   background-color: black;
-  padding-top: 0.5em;
+/*  padding-top: 0.5em; */
   padding-right: 0;
   margin-right: 20%;
   padding-left: 1rem;
