@@ -43,6 +43,10 @@ collections:
   articles:
     output: true
 
+  pages:
+    output: true
+    permalink: /:path/
+
 
 
 #kramdown:
