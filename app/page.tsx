@@ -8,18 +8,18 @@ const links = {
 const research = [
   {
     number: "01",
-    title: "MRI-guided radiotherapy",
-    copy: "Fast, motion-aware imaging methods that make adaptive treatment guidance more precise and clinically practical.",
+    title: "Computational imaging systems",
+    copy: "Physics-informed methods for acquisition, inverse problems, reconstruction, and analysis across medical and industrial imaging—from MRI and CT to neural fields and Gaussian splatting.",
   },
   {
     number: "02",
-    title: "Computational MRI",
-    copy: "Model-driven reconstruction that combines imaging physics with modern optimization and learned priors.",
+    title: "Vision & spatial intelligence",
+    copy: "Computer vision systems that learn robust representations of images, motion, geometry, and dynamic scenes for perception, quantitative analysis, and decision support.",
   },
   {
     number: "03",
-    title: "AI for medical imaging",
-    copy: "Robust learning systems for reconstruction, segmentation, and decision support across MRI and CT.",
+    title: "Human–AI & agentic systems",
+    copy: "Collaborative and agentic AI that augments human expertise, coordinates complex scientific workflows, and turns multimodal evidence into reliable, actionable insight.",
   },
 ];
 
@@ -74,8 +74,9 @@ export default function Home() {
             <em>of precision care.</em>
           </h1>
           <p className="lede">
-            I’m Aniket Pramanik, a medical imaging researcher building fast,
-            robust computational methods for MRI-guided radiotherapy.
+            I’m Aniket Pramanik, a researcher building intelligent imaging and
+            vision systems that connect physical acquisition, computational
+            models, and human expertise.
           </p>
           <div className="actions">
             <a className="button primary" href="#work">Explore my work</a>
@@ -100,9 +101,9 @@ export default function Home() {
         <div className="shell statement-inner">
           <p className="section-label">The focus</p>
           <p className="big-statement">
-            Bridging <em>imaging physics</em> and artificial intelligence to
-            see more clearly, reconstruct more rapidly, and guide treatment
-            with confidence.
+            Bridging <em>physical imaging</em>, computer vision, and
+            collaborative AI to acquire better data, solve hard inverse
+            problems, and turn complex signals into trustworthy decisions.
           </p>
         </div>
       </section>
@@ -110,7 +111,7 @@ export default function Home() {
       <section className="section shell" id="research">
         <header className="section-head">
           <p className="section-label">Research directions</p>
-          <h2>Where computation<br />meets the clinic.</h2>
+          <h2>From physical signals<br />to intelligent action.</h2>
         </header>
         <div className="research-grid">
           {research.map((item) => (
