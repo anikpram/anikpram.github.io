@@ -25,28 +25,44 @@ const research = [
 
 const work = [
   {
+    year: "2023",
+    tag: "IEEE Transactions on Computational Imaging",
+    title: "Memory-Efficient Model-Based Deep Learning",
+    copy: "A deep-equilibrium framework with convergence and robustness guarantees for large-scale inverse problems, including 3D and dynamic imaging.",
+    note: "Convergence · robustness · scalability",
+    href: "https://doi.org/10.1109/TCI.2023.3252268",
+  },
+  {
+    year: "2023",
+    tag: "IEEE Transactions on Medical Imaging",
+    title: "ENSURE: Unsupervised Deep Image Reconstruction",
+    copy: "A general framework for training reconstruction networks without fully sampled, noise-free ground truth, applicable across inverse problems.",
+    note: "Unsupervised learning · inverse problems",
+    href: "https://doi.org/10.1109/TMI.2022.3224359",
+  },
+  {
+    year: "2020",
+    tag: "IEEE Transactions on Medical Imaging",
+    title: "Deep Generalization of Structured Low-Rank Algorithms",
+    copy: "A fast, calibrationless parallel MRI framework that learns structured annihilation relations while retaining model-based interpretability.",
+    note: "Deep-SLR · corresponding author",
+    href: "https://doi.org/10.1109/TMI.2020.3014581",
+  },
+  {
     year: "2021",
-    tag: "MRI reconstruction · segmentation",
+    tag: "Award-winning work · ISMRM",
     title: "Image Domain Deep-SLR",
-    copy: "A structured deep-learning approach for joint reconstruction and segmentation of parallel MRI.",
-    note: "ISMRM Summa Cum Laude Merit Award",
+    copy: "Joint reconstruction and segmentation of parallel MRI using an image-domain structured deep-learning formulation.",
+    note: "Summa Cum Laude Merit Award",
     href: "https://archive.ismrm.org/2021/0393.html",
   },
   {
     year: "2019",
-    tag: "Model-based deep learning",
-    title: "Off-the-grid model based deep learning",
+    tag: "Award-winning work · IEEE ISBI",
+    title: "Off-the-Grid Model-Based Deep Learning",
     copy: "A continuous-domain model-based framework for learning compact, interpretable image representations.",
-    note: "IEEE ISBI Best Machine Learning Paper",
+    note: "Best Machine Learning Paper Award",
     href: "https://arxiv.org/abs/1812.10747",
-  },
-  {
-    year: "Open source",
-    tag: "Research software",
-    title: "Reproducible imaging methods",
-    copy: "Implementations of Deep-SLR, O-MODL, cardiac cine MRI segmentation, and operator-learning research.",
-    note: "Available on GitHub",
-    href: "https://github.com/anikpram?tab=repositories",
   },
 ];
 
@@ -60,6 +76,7 @@ export default function Home() {
         <div className="navlinks">
           <a href="#research">Research</a>
           <a href="#work">Selected work</a>
+          <a href="/projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href={links.scholar} target="_blank" rel="noreferrer">Scholar ↗</a>
         </div>
@@ -133,9 +150,12 @@ export default function Home() {
               <p className="section-label">Selected work</p>
               <h2>Methods with<br />measurable impact.</h2>
             </div>
-            <a className="inline-link" href={links.scholar} target="_blank" rel="noreferrer">
-              All publications on Scholar ↗
-            </a>
+            <div className="section-links">
+              <a className="inline-link" href="/projects">View project stories →</a>
+              <a className="inline-link" href={links.scholar} target="_blank" rel="noreferrer">
+                All publications on Scholar ↗
+              </a>
+            </div>
           </header>
           <div className="work-list">
             {work.map((item) => (
