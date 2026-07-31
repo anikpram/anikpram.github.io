@@ -103,14 +103,14 @@ export default function ProjectsPage() {
       </nav>
 
       <header className="projects-hero shell">
-        <p className="eyebrow">Selected projects · visual stories</p>
+        <p className="eyebrow">Selected projects · representative results</p>
         <h1>Inside the work.</h1>
         <div className="projects-intro">
           <p>
             Five projects exploring how physical models, learned priors, and
             reliable optimization can recover more from less data.
           </p>
-          <span>Paper figures are shown with motion treatments for exploration.</span>
+          <span>Representative results from each published paper.</span>
         </div>
       </header>
 
@@ -127,23 +127,17 @@ export default function ProjectsPage() {
                 </div>
               </header>
 
-              <div className="project-media">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload={i < 2 ? "auto" : "metadata"}
-                  poster={`/projects/${project.media}.jpg`}
-                  aria-label={`Animated figure study for ${project.title}`}
-                >
-                  <source src={`/projects/${project.media}.mp4`} type="video/mp4" />
-                </video>
+              <figure className="project-media">
+                <img
+                  src={`/projects/${project.media}.jpg`}
+                  alt={`Representative results from ${project.title}`}
+                  loading={i < 2 ? "eager" : "lazy"}
+                />
                 <div className="media-caption">
-                  <span>Figure motion study</span>
-                  <span>Derived from the published paper</span>
+                  <span>Representative results</span>
+                  <span>From the published paper</span>
                 </div>
-              </div>
+              </figure>
 
               <div className="project-details">
                 <div><span>Challenge</span><p>{project.challenge}</p></div>
