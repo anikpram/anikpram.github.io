@@ -104,8 +104,6 @@ export default function Home() {
           <div className="portrait-frame">
             <img src="/aniket-pramanik.png" alt="Portrait of Aniket Pramanik" />
           </div>
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
           <p className="portrait-label">
             Medical Physics
             <span>Memorial Sloan Kettering Cancer Center</span>

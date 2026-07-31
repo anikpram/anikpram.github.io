@@ -25,11 +25,8 @@ h1 em,h2 em { font-weight:400; color:#5d7830; }
 .button.primary { background:var(--ink); color:white; padding:16px 22px; border-radius:2px; }
 .button.text { border-bottom:1px solid var(--ink); padding-bottom:5px; }
 .portrait-wrap { width:min(410px,86%); justify-self:end; position:relative; }
-.portrait-frame { aspect-ratio:4/5; overflow:hidden; position:relative; z-index:2; border-radius:48% 48% 6px 6px; background:#d7d0bf; box-shadow:0 24px 70px rgba(0,0,0,.13); }
-.portrait-frame img { width:100%; height:100%; object-fit:cover; filter:saturate(.72) sepia(.08) contrast(1.05); }
-.orbit { position:absolute; border:1px solid #b08a28; border-radius:50%; z-index:1; }
-.orbit-one { width:118%; height:74%; left:-18%; top:10%; transform:rotate(-16deg); }
-.orbit-two { width:105%; height:86%; left:4%; top:-5%; transform:rotate(22deg); border-color:#d2b96c; }
+.portrait-frame { aspect-ratio:1; overflow:hidden; position:relative; border:3px solid #b08a28; border-radius:50%; background:#d7d0bf; box-shadow:0 24px 70px rgba(0,0,0,.13); }
+.portrait-frame img { width:100%; height:100%; object-fit:cover; object-position:center 24%; filter:saturate(.72) sepia(.08) contrast(1.05); }
 .portrait-label { font-size:12px; font-weight:600; margin:20px 0 0; display:flex; justify-content:space-between; gap:20px; }
 .portrait-label span { font-weight:400; color:#686257; text-align:right; }
 .scroll-note { position:absolute; bottom:28px; left:0; font-size:10px; text-transform:uppercase; letter-spacing:.12em; }
