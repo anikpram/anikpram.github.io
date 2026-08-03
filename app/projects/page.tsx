@@ -57,19 +57,19 @@ const projects = [
   },
   {
     index: "04",
-    year: "2021",
-    journal: "ISMRM · Summa Cum Laude Merit Award",
-    title: "Image Domain Deep-SLR",
-    short: "Joint reconstruction and segmentation from undersampled parallel MRI.",
+    year: "2025",
+    journal: "arXiv preprint",
+    title: "Plug-and-Play 2.5D XCT Reconstruction",
+    short: "A multi-slice artifact-reduction prior for fast, accurate industrial computed tomography.",
     challenge:
-      "Reconstruction artifacts can propagate into downstream segmentation, while independently trained models miss useful feedback between the two tasks.",
+      "Sparse-view cone-beam XCT can reduce acquisition time and cost, but conventional reconstructions suffer from noise, beam hardening, and lost defect detail. Two-dimensional priors also ignore useful information between neighboring slices.",
     method:
-      "An image-domain Deep-SLR reconstruction network and segmentation network are trained end-to-end, allowing anatomical supervision to improve reconstruction and sharper reconstructions to improve segmentation.",
+      "The plug-and-play framework uses a 2.5D artifact-reduction network that processes five neighboring slices. It combines inter-slice context with explicit measurement consistency while directly suppressing common XCT artifacts.",
     impact:
-      "The joint system reduces overfitting and segmentation error while preserving sharper anatomical detail from highly undersampled measurements.",
-    tags: ["Joint learning", "Segmentation", "Parallel MRI"],
-    media: "image-domain-deep-slr",
-    paper: "https://archive.ismrm.org/2021/0393.html",
+      "The method better preserves pore size and shape for defect detection and generalizes from simulated training scans to experimental XCT data.",
+    tags: ["Industrial XCT", "Plug-and-play", "2.5D reconstruction"],
+    media: "plug-play-2-5d",
+    paper: "https://arxiv.org/abs/2506.14719",
   },
   {
     index: "05",
