@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.GITHUB_PAGES === "true"
+      ? "https://anikpram.github.io"
+      : "https://aniket-pramanik-research.agermanfan.chatgpt.site",
+  ),
   title: "Aniket Pramanik — Medical Imaging Researcher",
   description:
     "Research scientist working across computational imaging, computer vision, inverse problems, human–AI collaboration, and agentic systems.",
