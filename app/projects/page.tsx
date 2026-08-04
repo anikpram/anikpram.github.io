@@ -103,14 +103,14 @@ export default function ProjectsPage() {
       </nav>
 
       <header className="projects-hero shell">
-        <p className="eyebrow">Selected projects · representative results</p>
+        <p className="eyebrow">Selected projects · short explainers</p>
         <h1>Inside the work.</h1>
         <div className="projects-intro">
           <p>
             Five projects exploring how physical models, learned priors, and
             reliable optimization can recover more from less data.
           </p>
-          <span>Representative results from each published paper.</span>
+          <span>Brief visual overviews designed for readers across disciplines.</span>
         </div>
       </header>
 
@@ -128,14 +128,20 @@ export default function ProjectsPage() {
               </header>
 
               <figure className="project-media">
-                <img
-                  src={`/projects/${project.media}.jpg`}
-                  alt={`Representative results from ${project.title}`}
-                  loading={i < 2 ? "eager" : "lazy"}
-                />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload={i < 2 ? "auto" : "metadata"}
+                  poster={`/projects/${project.media}.jpg`}
+                  aria-label={`Short visual overview of ${project.title}`}
+                >
+                  <source src={`/projects/${project.media}.mp4`} type="video/mp4" />
+                </video>
                 <div className="media-caption">
-                  <span>Representative results</span>
-                  <span>From the published paper</span>
+                  <span>Project overview · approximately 7 seconds</span>
+                  <span>Problem · idea · result</span>
                 </div>
               </figure>
 
