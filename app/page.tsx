@@ -104,7 +104,7 @@ export default function Home() {
         </div>
         <div className="portrait-wrap">
           <div className="portrait-frame">
-            <img src="/aniket-pramanik.png" alt="Portrait of Aniket Pramanik" />
+            <img src="/aniket-pramanik.jpg" alt="Portrait of Aniket Pramanik" />
           </div>
           <p className="portrait-label">
             Medical Physics
