@@ -134,6 +134,7 @@ export default function ProjectsPage() {
                   muted
                   loop
                   playsInline
+                  controls
                   preload={i < 2 ? "auto" : "metadata"}
                   poster={`/projects/${project.media}.jpg`}
                   aria-label={`Short visual overview of ${project.title}`}

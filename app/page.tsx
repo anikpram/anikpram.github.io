@@ -74,6 +74,7 @@ export default function Home() {
           AP<span>.</span>
         </a>
         <div className="navlinks">
+          <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#work">Selected work</a>
           <a href="/projects">Projects</a>
@@ -121,6 +122,34 @@ export default function Home() {
             collaborative AI to acquire better data, solve hard inverse
             problems, and turn complex signals into trustworthy decisions.
           </p>
+        </div>
+      </section>
+
+      <section className="section shell bio-section" id="about">
+        <header className="section-head">
+          <p className="section-label">Short biography</p>
+          <h2>Engineering better ways<br />to see and decide.</h2>
+        </header>
+        <div className="bio-grid">
+          <p className="bio-lead">
+            Aniket Pramanik is a research fellow in Medical Physics at Memorial
+            Sloan Kettering Cancer Center, working at the intersection of
+            computational imaging, computer vision, inverse problems, and AI.
+          </p>
+          <div>
+            <p>
+              His research develops physics-informed and learning-based methods
+              for acquiring, reconstructing, and analyzing medical and industrial
+              images. Current interests include MRI-guided radiotherapy,
+              computational MRI, human–AI collaboration, and reliable agentic systems.
+            </p>
+            <p>
+              Before joining MSK, he was a postdoctoral research associate at Oak
+              Ridge National Laboratory, where he worked on high-resolution X-ray
+              CT reconstruction for additively manufactured components. He earned
+              his PhD in Electrical and Computer Engineering from the University of Iowa.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -211,6 +240,11 @@ export default function Home() {
           <p className="section-label">Let’s connect</p>
           <h2>Have an idea worth<br /><em>seeing through?</em></h2>
           <a className="circle-link" href={links.email} aria-label="Email Aniket Pramanik">↗</a>
+          <div className="contact-details">
+            <span>Research Fellow · Medical Physics</span>
+            <span>Memorial Sloan Kettering Cancer Center · New York</span>
+            <a href={links.email}>aniketpramanik16@gmail.com</a>
+          </div>
         </div>
         <div className="shell footer-bottom">
           <p>© {new Date().getFullYear()} Aniket Pramanik</p>
