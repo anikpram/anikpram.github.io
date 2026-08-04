@@ -45,7 +45,7 @@ const work = [
     tag: "IEEE Transactions on Medical Imaging",
     title: "Deep Generalization of Structured Low-Rank Algorithms",
     copy: "A fast, calibrationless parallel MRI framework that learns structured annihilation relations while retaining model-based interpretability.",
-    note: "Deep-SLR · corresponding author",
+    note: "Structured low rank · calibrationless MRI",
     href: "https://doi.org/10.1109/TMI.2020.3014581",
   },
   {
