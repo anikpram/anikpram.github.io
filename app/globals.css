@@ -26,7 +26,7 @@ h1 em,h2 em { font-weight:400; color:#5d7830; }
 .button.text { border-bottom:1px solid var(--ink); padding-bottom:5px; }
 .portrait-wrap { width:min(410px,86%); justify-self:end; position:relative; }
 .portrait-frame { aspect-ratio:1; overflow:hidden; position:relative; border:3px solid #b08a28; border-radius:50%; background:#d7d0bf; box-shadow:0 24px 70px rgba(0,0,0,.13); }
-.portrait-frame img { width:100%; height:100%; object-fit:cover; object-position:center 24%; filter:saturate(.72) sepia(.08) contrast(1.05); }
+.portrait-frame img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 24%; transform:scale(1.035); filter:saturate(.72) sepia(.08) contrast(1.05); }
 .portrait-label { font-size:12px; font-weight:600; margin:20px 0 0; display:flex; justify-content:space-between; gap:20px; }
 .portrait-label span { font-weight:400; color:#686257; text-align:right; }
 .scroll-note { position:absolute; bottom:28px; left:0; font-size:10px; text-transform:uppercase; letter-spacing:.12em; }
