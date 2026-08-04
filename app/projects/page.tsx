@@ -98,6 +98,7 @@ export default function ProjectsPage() {
           <a href="/">Home</a>
           <a href="/#research">Research</a>
           <a href="/#work">Selected work</a>
+          <a href="/blog">Blog</a>
           <a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar ↗</a>
         </div>
       </nav>

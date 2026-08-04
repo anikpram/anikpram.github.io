@@ -77,6 +77,7 @@ export default function Home() {
           <a href="#research">Research</a>
           <a href="#work">Selected work</a>
           <a href="/projects">Projects</a>
+          <a href="/blog">Blog</a>
           <a href="#experience">Experience</a>
           <a href={links.scholar} target="_blank" rel="noreferrer">Scholar ↗</a>
         </div>
