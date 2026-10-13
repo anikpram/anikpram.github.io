@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import {AcademicNav,AcademicFooter} from "../academic-components";
 
 export const metadata: Metadata = {
   title: "Blog — Aniket Pramanik",
   description:
-    "Writing on computational imaging, computer vision, inverse problems, and human-centered AI.",
+    "Writing on computational MRI and AI for medical imaging.",
 };
 
 type BlogPost = {
@@ -15,32 +16,27 @@ type BlogPost = {
 };
 
 // Add future posts here; the page will automatically render each one as a link.
-const posts: BlogPost[] = [];
+const posts: BlogPost[] = [{
+  title: "The Rise of AI-driven Computational MRI: Transforming Radiology with Speed and Precision",
+  date: "2026", topic: "MedicalTech Magazine",
+  summary: "A perspective on accelerated MRI, learned reconstruction, and the scientific and clinical challenges of AI in radiology.",
+  href: "https://themedicaltech.com/the-rise-of-ai-driven-computational-mri-transforming-radiology-with-speed-and-precision/",
+}];
 
 export default function BlogPage() {
   return (
-    <main className="blog-page">
-      <nav className="nav shell" aria-label="Blog navigation">
-        <a className="brand" href="/" aria-label="Aniket Pramanik, home">AP<span>.</span></a>
-        <div className="navlinks">
-          <a href="/">Home</a>
-          <a href="/projects">Projects</a>
-          <a href="/#research">Research</a>
-          <a href="https://scholar.google.com/citations?user=8z5UYtoAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar ↗</a>
-        </div>
-      </nav>
+    <main className="blog-page academic-writing">
+      <AcademicNav />
 
       <header className="blog-hero shell">
-        <p className="eyebrow">Notes · ideas · perspectives</p>
-        <h1>Research,<br /><em>in plain language.</em></h1>
+        <p className="eyebrow">Articles & perspectives</p>
+        <h1>Writing</h1>
         <div className="blog-intro">
           <p>
-            Essays and working notes on computational imaging, computer vision,
-            inverse problems, and how people collaborate with intelligent systems.
+            Articles on computational MRI, image reconstruction, and AI in medical imaging.
           </p>
           <span>
-            A growing index of articles connecting technical ideas with the
-            questions that motivate them.
+            Perspectives for a broader audience, alongside my peer-reviewed research.
           </span>
         </div>
       </header>
@@ -80,13 +76,13 @@ export default function BlogPage() {
       <footer className="blog-footer">
         <div className="shell">
           <p className="section-label">Explore further</p>
-          <h2>Until then,<br /><em>see the research.</em></h2>
+          <h2>Related research</h2>
           <div>
             <a href="/projects">View projects →</a>
             <a href="/">Return home ←</a>
           </div>
         </div>
       </footer>
-    </main>
+    <AcademicFooter /></main>
   );
 }

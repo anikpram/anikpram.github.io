@@ -9,19 +9,17 @@ export const metadata: Metadata = {
   ),
   title: "Aniket Pramanik — Medical Imaging Researcher",
   description:
-    "Research scientist working across computational imaging, computer vision, inverse problems, human–AI collaboration, and agentic systems.",
+    "Research Fellow in Medical Physics at Memorial Sloan Kettering Cancer Center. Physics-informed learning for MRI, industrial CT, and real-time image-guided radiotherapy.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
-    title: "Aniket Pramanik — Computational Imaging, Vision & Human–AI Systems",
+    title: "Aniket Pramanik — Computational Imaging Research",
     description:
-      "Research across computational imaging, computer vision, inverse problems, human–AI collaboration, and agentic systems.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Aniket Pramanik academic research website" }],
+      "Physics-informed image reconstruction, computational MRI, industrial CT, and MRI-guided radiotherapy.",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Aniket Pramanik — Computational Imaging, Vision & Human–AI Systems",
-    description: "Computational imaging, computer vision, inverse problems, and human–AI systems.",
-    images: ["/og.png"],
+    card: "summary",
+    title: "Aniket Pramanik — Computational Imaging Research",
+    description: "Physics-informed image reconstruction, computational MRI, and inverse problems.",
   },
 };
 
