@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   ),
   title: "Aniket Pramanik — Medical Imaging Researcher",
   description:
-    "Research Fellow in Medical Physics at Memorial Sloan Kettering Cancer Center. Physics-informed learning for MRI, industrial CT, and real-time image-guided radiotherapy.",
+    "Research Fellow in Radiation Oncology at Mayo Clinic, Rochester. Physics-informed learning for MRI, industrial CT, and real-time image-guided radiotherapy.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
     title: "Aniket Pramanik — Computational Imaging Research",
